@@ -1,0 +1,274 @@
+# Chapter: Chapter 1
+@background outside
+@weather snow
+@music abandoned_hall
+
+Alice @sprite 006
+
+@action
+[en]
+The storm swallows the last crystal glimmer behind them. Corrode is gone, but the scrape on Z's wing is still sparking.
+[/en]
+[pt-BR]
+A tempestade engole o último brilho dos cristais. Corrode sumiu, mas a asa arranhada de Z ainda solta faíscas.
+[/pt-BR]
+[es-419]
+La tormenta se traga el último brillo de los cristales. Corrode desapareció, pero el ala raspada de Z todavía chispea.
+[/es-419]
+
+Z @sprite 003
+
+[en]
+It's a scratch. Keep moving before she comes back.
+[/en]
+[pt-BR]
+Foi só um arranhão. Vamos continuar antes que ela volte.
+[/pt-BR]
+[es-419]
+Es solo un rasguño. Sigamos antes de que vuelva.
+[/es-419]
+
+Alice @sprite 006
+
+[en]
+You jumped in front of every attack. You could've been seriously hurt.
+[/en]
+[pt-BR]
+Você se colocou na frente de todos os ataques. Podia ter se machucado de verdade.
+[/pt-BR]
+[es-419]
+Te pusiste delante de cada ataque. Podrías haberte lastimado de verdad.
+[/es-419]
+
+Z @sprite 003
+
+[en]
+She was aiming at you. I wasn't going to let that happen.
+[/en]
+[pt-BR]
+Ela estava mirando em você. Eu não ia deixar isso acontecer.
+[/pt-BR]
+[es-419]
+Ella te estaba apuntando. No iba a dejar que eso pasara.
+[/es-419]
+
+Alice @sprite 002
+
+[en]
+And now we know the thing following us has a name. Corrode.
+[/en]
+[pt-BR]
+Agora sabemos que a coisa que estava seguindo a gente tem nome. Corrode.
+[/pt-BR]
+[es-419]
+Y ahora sabemos que eso que nos seguía tiene nombre. Corrode.
+[/es-419]
+
+Z @sprite 001
+
+[en]
+Names don't make her safer. We stay on the move. No camp, no shelter we can't leave quickly.
+[/en]
+[pt-BR]
+Saber o nome dela não torna nada mais seguro. A gente continua em movimento. Sem acampamento, sem abrigo do qual não possamos sair rápido.
+[/pt-BR]
+[es-419]
+Saber su nombre no la hace menos peligrosa. Seguimos en movimiento. Sin campamento y sin refugio del que no podamos salir rápido.
+[/es-419]
+
+Alice @sprite 002
+
+[en]
+Then we find cover until the worst of the storm passes. After that, we keep wandering.
+[/en]
+[pt-BR]
+Então vamos procurar proteção até o pior da tempestade passar. Depois, continuamos vagando.
+[/pt-BR]
+[es-419]
+Entonces busquemos resguardo hasta que pase lo peor de la tormenta. Después, seguimos vagando.
+[/es-419]
+
+@background moreAbandonedd
+
+Z @sprite 001
+
+[en]
+There. An old records station. The roof is mostly gone, but those walls should block the wind.
+[/en]
+[pt-BR]
+Ali. Uma antiga estação de arquivos. O telhado quase sumiu, mas aquelas paredes devem bloquear o vento.
+[/pt-BR]
+[es-419]
+Allí. Una vieja estación de archivos. Casi no queda techo, pero esas paredes deberían cortar el viento.
+[/es-419]
+
+Alice @sprite 003
+
+[en]
+It's abandoned, just like everything else out here.
+[/en]
+[pt-BR]
+Está abandonada, como todo o resto por aqui.
+[/pt-BR]
+[es-419]
+Está abandonada, como todo lo demás por aquí.
+[/es-419]
+
+Z @sprite 001
+
+[en]
+We rest for a little while. We don't stay. If Corrode can track us, this place isn't safe.
+[/en]
+[pt-BR]
+Vamos descansar um pouco. Não vamos ficar. Se Corrode consegue nos rastrear, este lugar não é seguro.
+[/pt-BR]
+[es-419]
+Descansamos un rato. No nos quedamos. Si Corrode puede rastrearnos, este lugar no es seguro.
+[/es-419]
+
+@background files
+@music lament
+
+Alice @sprite 002
+
+[en]
+There's a console under all this dust. It still has power.
+[/en]
+[pt-BR]
+Tem um console debaixo de toda essa poeira. Ainda tem energia.
+[/pt-BR]
+[es-419]
+Hay una consola bajo todo este polvo. Todavía tiene energía.
+[/es-419]
+
+Z @sprite 002
+
+[en]
+Don't touch it. We don't know what it could send.
+[/en]
+[pt-BR]
+Não toca. A gente não sabe o que isso pode transmitir.
+[/pt-BR]
+[es-419]
+No la toques. No sabemos qué podría transmitir.
+[/es-419]
+
+Alice @sprite 003
+
+[en]
+It already turned itself on.
+[/en]
+[pt-BR]
+Ela acabou de ligar sozinha.
+[/pt-BR]
+[es-419]
+Acaba de encenderse sola.
+[/es-419]
+
+SYSTEM @sprite 001
+
+[en]
+...MOBILE SIGNAL DETECTED... DISTANCE: UNKNOWN...
+[/en]
+[pt-BR]
+...SINAL MÓVEL DETECTADO... DISTÂNCIA: DESCONHECIDA...
+[/pt-BR]
+[es-419]
+...SEÑAL MÓVIL DETECTADA... DISTANCIA: DESCONOCIDA...
+[/es-419]
+
+Alice @sprite 002
+
+[en]
+Someone else is out there. Maybe they're moving too.
+[/en]
+[pt-BR]
+Tem mais alguém lá fora. Talvez também esteja se deslocando.
+[/pt-BR]
+[es-419]
+Hay alguien más allá afuera. Quizá también esté en movimiento.
+[/es-419]
+
+Z @sprite 003
+
+[en]
+Or the signal is bait. We leave before it can answer us.
+[/en]
+[pt-BR]
+Ou o sinal é uma armadilha. Vamos sair antes que ele responda.
+[/pt-BR]
+[es-419]
+O quizá la señal sea una trampa. Vámonos antes de que nos responda.
+[/es-419]
+
+Alice @sprite 002
+
+[en]
+Z, look. It's answering already.
+[/en]
+[pt-BR]
+Z, olha. Já está respondendo.
+[/pt-BR]
+[es-419]
+Z, mira. Ya está respondiendo.
+[/es-419]
+
+SYSTEM @sprite 001
+
+[en]
+...CORRODE: LOCATION ACQUIRED...
+[/en]
+[pt-BR]
+...CORRODE: LOCALIZAÇÃO OBTIDA...
+[/pt-BR]
+[es-419]
+...CORRODE: UBICACIÓN ADQUIRIDA...
+[/es-419]
+
+Alice @sprite 006
+
+[en]
+She found us again.
+[/en]
+[pt-BR]
+Ela encontrou a gente de novo.
+[/pt-BR]
+[es-419]
+Nos encontró otra vez.
+[/es-419]
+
+Z @sprite 004
+
+[en]
+Then we move. Now. Wherever that signal came from, we find it before she does.
+[/en]
+[pt-BR]
+Então vamos. Agora. Seja lá de onde veio esse sinal, vamos encontrar antes dela.
+[/pt-BR]
+[es-419]
+Entonces nos movemos. Ahora. Venga de donde venga esa señal, la encontraremos antes que ella.
+[/es-419]
+
+Alice @sprite 006
+
+[en]
+And if the others are out there?
+[/en]
+[pt-BR]
+E se os outros estiverem lá fora?
+[/pt-BR]
+[es-419]
+¿Y si los demás están allá afuera?
+[/es-419]
+
+Z @sprite 004
+
+[en]
+Then we make sure they get a warning before Corrode reaches them.
+[/en]
+[pt-BR]
+Então vamos avisá-los antes que Corrode chegue até eles.
+[/pt-BR]
+[es-419]
+Entonces nos aseguraremos de avisarles antes de que Corrode llegue hasta ellos.
+[/es-419]

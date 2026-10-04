@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-layout="mobile">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Killer Drones: An MD AU Story
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div id="game">
+
+
+    <!-- =====================================================
+         LOADING SCREEN
+    ====================================================== -->
+
+    <section
+        id="loading-screen"
+        class="screen active"
+    >
+
+        <div class="loading-content">
+
+            <div class="loading-status">
+
+                <div
+                    id="loading-step-1"
+                    class="loading-step"
+                >
+                    <span class="step-number">01</span>
+                    <span
+                        id="loading-text-1"
+                        class="step-text"
+                        data-i18n="loading.initializing"
+                    >
+                        INITIALIZING SYSTEM
+                    </span>
+                </div>
+
+                <div
+                    id="loading-step-2"
+                    class="loading-step"
+                >
+                    <span class="step-number">02</span>
+                    <span
+                        id="loading-text-2"
+                        class="step-text"
+                        data-i18n="loading.assets"
+                    >
+                        LOADING ASSETS
+                    </span>
+                </div>
+
+                <div
+                    id="loading-step-3"
+                    class="loading-step"
+                >
+                    <span class="step-number">03</span>
+                    <span
+                        id="loading-text-3"
+                        class="step-text"
+                        data-i18n="loading.story"
+                    >
+                        LOADING STORY
+                    </span>
+                </div>
+
+                <div
+                    id="loading-step-4"
+                    class="loading-step"
+                >
+                    <span class="step-number">04</span>
+                    <span
+                        id="loading-text-4"
+                        class="step-text"
+                        data-i18n="loading.audio"
+                    >
+                        INITIALIZING AUDIO
+                    </span>
+                </div>
+
+                <div
+                    id="loading-step-5"
+                    class="loading-step"
+                >
+                    <span class="step-number">05</span>
+                    <span
+                        id="loading-text-5"
+                        class="step-text"
+                        data-i18n="loading.ready"
+                    >
+                        READY
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="loading-center">
+
+                <div class="loading-bar">
+
+                    <div
+                        id="loading-progress"
+                        class="loading-progress"
+                    ></div>
+
+                </div>
+
+                <div
+                    id="loading-percent"
+                    class="loading-percent"
+                >
+                    0%
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTENT WARNING
+    ====================================================== -->
+
+    <section id="warning-screen" class="screen" aria-labelledby="warning-title">
+        <div class="warning-panel">
+            <div class="warning-terminal">
+                <p class="warning-command-prefix">C:\KILLER_DRONES&gt; WARNING.EXE</p>
+                <h1 id="warning-title" class="warning-title">SYSTEM WARNING</h1>
+                <section class="warning-section">
+                    <h2 id="warning-epilepsy-title">FLASHING LIGHTS</h2>
+                    <p id="warning-epilepsy-text"></p>
+                </section>
+                <section class="warning-section">
+                    <h2 id="warning-graphics-title">GRAPHICS AND PERFORMANCE</h2>
+                    <p id="warning-graphics-text"></p>
+                </section>
+                <p id="warning-language-label" class="warning-language-label">Language:</p>
+                <div class="warning-language-options">
+                    <button class="language-button warning-language-button" data-language="en">[EN]</button>
+                    <button class="language-button warning-language-button" data-language="pt-BR">[PT-BR]</button>
+                    <button class="language-button warning-language-button" data-language="es-419">[ES]</button>
+                </div>
+                <label class="warning-command-row" for="warning-command-input">
+                    <span id="warning-prompt" class="warning-prompt"></span>
+                    <span class="warning-input-wrap">
+                        <input id="warning-command-input" type="text" maxlength="1" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Type Y or N">
+                        <span class="warning-block-cursor" aria-hidden="true"></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <div id="fps-counter" aria-hidden="true">0 FPS</div>
+
+    <!-- =====================================================
+         TITLE SCREEN
+    ====================================================== -->
+
+    <section
+        id="title-screen"
+        class="screen title-gated"
+    >
+
+        <div class="title-characters" aria-hidden="true">
+            <img src="assets/images/title/alicenz.png" alt="" draggable="false">
+        </div>
+
+        <div class="title-content">
+
+            <h1 class="game-title">
+                KILLER DRONES
+            </h1>
+
+            <div
+                id="game-subtitle"
+                class="game-subtitle"
+            >
+                AN MD AU STORY
+            </div>
+
+            <button id="title-start-prompt" class="title-start-prompt" type="button"></button>
+
+
+            <div class="title-menu">
+
+                <button
+                    id="start-button"
+                    class="menu-button"
+                    data-i18n="menu.start"
+                >
+                    START
+                </button>
+
+                <button
+                    id="continue-button"
+                    class="menu-button"
+                    data-i18n="menu.continue"
+                >
+                    CONTINUE
+                </button>
+
+                <button
+                    id="load-title-button"
+                    class="menu-button"
+                    data-i18n="menu.load"
+                >
+                    LOAD
+                </button>
+
+                <button
+                    id="settings-button"
+                    class="menu-button"
+                    data-i18n="menu.settings"
+                >
+                    SETTINGS
+                </button>
+
+                <button
+                    id="credits-button"
+                    class="menu-button"
+                    data-i18n="menu.credits"
+                >
+                    CREDITS
+                </button>
+
+            </div>
+
+
+            <div class="credits">
+
+                Made by: Ale_GamePlayer2003
+
+            </div>
+
+        </div>
+
+
+        <div class="version">
+            VERSION 0.4.5
+        </div>
+
+    </section>
+
+    <section id="play-screen" class="screen">
+        <div class="play-content">
+            <h2 id="play-title" class="play-title">PLAY</h2>
+            <div class="play-tabs">
+                <button id="chapters-tab" class="play-tab active" type="button">CHAPTERS</button>
+                <button id="achievements-tab" class="play-tab" type="button">ACHIEVEMENTS</button>
+            </div>
+            <div id="chapters-panel" class="play-panel">
+                <div class="chapter-carousel">
+                    <button id="chapter-previous" class="carousel-arrow" type="button" aria-label="Previous chapter">‹</button>
+                    <article id="chapter-card" class="chapter-card"></article>
+                    <button id="chapter-next" class="carousel-arrow" type="button" aria-label="Next chapter">›</button>
+                </div>
+                <button id="play-chapter-button" class="menu-button" type="button">PLAY CHAPTER</button>
+            </div>
+            <div id="achievements-panel" class="play-panel achievements-panel" hidden>
+                <div id="achievement-list" class="achievement-list"></div>
+            </div>
+            <button id="play-back-button" class="menu-button back-button" type="button">BACK</button>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         SETTINGS
+    ====================================================== -->
+
+    <section
+        id="settings-screen"
+        class="screen"
+    >
+
+        <div class="settings-content">
+
+            <h2
+                id="settings-title"
+                class="settings-title"
+                data-i18n="settings.title"
+            >
+                SETTINGS
+            </h2>
+
+
+            <div class="settings-section">
+
+                <div
+                    id="settings-language-label"
+                    class="settings-label"
+                    data-i18n="settings.language"
+                >
+                    LANGUAGE
+                </div>
+
+                <div class="language-options">
+
+                    <button
+                        class="language-button"
+                        data-language="en"
+                    >
+                        ENGLISH
+                    </button>
+
+                    <button
+                        class="language-button"
+                        data-language="pt-BR"
+                    >
+                        PORTUGUÊS
+                    </button>
+
+                    <button
+                        class="language-button"
+                        data-language="es-419"
+                    >
+                        ESPAÑOL
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="kd-settings-grid">
+
+                <div class="kd-setting-row">
+                    <label class="setting-label" for="settings-fps">SHOW FPS</label>
+                    <input id="settings-fps" type="checkbox">
+                </div>
+
+                <div class="kd-setting-row">
+                    <label class="setting-label" for="settings-quality">QUALITY</label>
+                    <select id="settings-quality">
+                        <option value="low">LOW</option>
+                        <option value="medium">MEDIUM</option>
+                        <option value="high">HIGH</option>
+                        <option value="ultra">ULTRA</option>
+                    </select>
+                </div>
+
+                <div class="kd-setting-row">
+                    <label class="setting-label" for="settings-effects">VISUAL EFFECTS / SHADERS</label>
+                    <input id="settings-effects" type="checkbox">
+                </div>
+
+                <div class="kd-setting-row">
+                    <label class="setting-label" for="settings-flashing-lights">FLASHING LIGHTS</label>
+                    <input id="settings-flashing-lights" type="checkbox">
+                </div>
+
+                <div class="kd-setting-row">
+                    <label class="setting-label" for="settings-mouse-light">MOUSE LIGHT (L)</label>
+                    <input id="settings-mouse-light" type="checkbox">
+                </div>
+
+                <div class="kd-setting-row">
+                    <label class="setting-label" for="settings-text-speed">TEXT SPEED</label>
+                    <input id="settings-text-speed" type="range" min="5" max="80" step="1">
+                    <div class="kd-setting-value" id="settings-text-speed-value">25</div>
+                </div>
+
+                <div class="kd-setting-row">
+                    <label class="setting-label" for="settings-volume">MASTER VOLUME</label>
+                    <input id="settings-volume" type="range" min="0" max="1" step="0.01">
+                    <div class="kd-setting-value" id="settings-volume-value">100%</div>
+                </div>
+
+                <div class="kd-setting-row">
+                    <label class="setting-label" for="settings-music-volume">MUSIC VOLUME</label>
+                    <input id="settings-music-volume" type="range" min="0" max="1" step="0.01">
+                    <div class="kd-setting-value" id="settings-music-volume-value">35%</div>
+                </div>
+
+                <div class="kd-setting-row">
+                    <label class="setting-label" for="settings-sfx-volume">SFX VOLUME</label>
+                    <input id="settings-sfx-volume" type="range" min="0" max="1" step="0.01">
+                    <div class="kd-setting-value" id="settings-sfx-volume-value">100%</div>
+                </div>
+
+            </div>
+
+            <button
+                id="settings-reset-button"
+                class="kd-settings-reset"
+                type="button"
+            >
+                RESET SETTINGS
+            </button>
+
+            <button
+                id="settings-back-button"
+                class="menu-button back-button"
+                data-i18n="menu.back"
+            >
+                BACK
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- =====================================================
+         CREDITS
+    ====================================================== -->
+
+    <section id="credits-screen" class="screen">
+
+        <div id="credits-grid" aria-hidden="true"></div>
+
+        <div class="credits-content">
+            <h2 id="credits-title" class="credits-title" data-i18n="credits.title">CREDITS</h2>
+
+            <div class="credits-grid-content">
+                <div class="credit-card">
+                    <div class="credit-role" data-i18n="credits.creatorRole">CREATOR / DEVELOPER</div>
+                    <div class="credit-name">Ale_GamePlayer2003</div>
+                </div>
+
+                <div class="credit-card">
+                    <div class="credit-role" data-i18n="credits.projectRole">PROJECT</div>
+                    <div class="credit-name">Killer Drones: An MD AU Story</div>
+                </div>
+
+                <div class="credit-card">
+                    <div class="credit-role" data-i18n="credits.techRole">TECHNOLOGY</div>
+                    <div class="credit-name">HTML / CSS / JavaScript / GLSL</div>
+                </div>
+
+                <div class="credit-card">
+                    <div class="credit-role" data-i18n="credits.fontRole">FONT</div>
+                    <div class="credit-name">VCR OSD Mono</div>
+                </div>
+
+                <div class="credit-card">
+                    <div class="credit-role music-credit-role">MUSIC</div>
+                    <div class="credit-name">Disturbing Presence (Game Over)<br><span class="credit-detail">Sunday Night Plumbin'</span></div>
+                </div>
+
+                <div class="credit-card">
+                    <div class="credit-role music-credit-role">MUSIC</div>
+                    <div class="credit-name">SHROUDED<br><span class="credit-detail">xX4ce0f$padesXx 1x1x1x1 chase theme — FORSAKEN OST</span></div>
+                </div>
+
+                <div class="credit-card">
+                    <div class="credit-role music-credit-role">MUSIC</div>
+                    <div class="credit-name">Lament<br><span class="credit-detail">Forsaken lobby menu — FORSAKEN OST</span></div>
+                </div>
+
+                <div class="credit-card">
+                    <div class="credit-role story-reference-role">STORY REFERENCE</div>
+                    <div class="credit-name">Murder Drones<br><span class="credit-detail">Glitch Productions</span></div>
+                </div>
+            </div>
+
+            <button id="credits-back-button" class="menu-button back-button" data-i18n="menu.back">BACK</button>
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SAVE / LOAD SCREEN
+    ====================================================== -->
+
+    <section
+        id="save-screen"
+        class="screen"
+    >
+
+        <div class="save-content">
+
+            <h2
+                id="save-screen-title"
+                class="save-title"
+            >
+                LOAD
+            </h2>
+
+            <div id="save-chapter-filter" class="save-chapter-filter" hidden>
+                <button id="save-chapter-previous" class="carousel-arrow" type="button" aria-label="Previous chapter">‹</button>
+                <span id="save-chapter-name"></span>
+                <button id="save-chapter-next" class="carousel-arrow" type="button" aria-label="Next chapter">›</button>
+            </div>
+
+
+            <div class="save-carousel">
+                <button id="save-previous" class="carousel-arrow" type="button" aria-label="Previous save">‹</button>
+                <div id="save-slots" class="save-slots"></div>
+                <button id="save-next" class="carousel-arrow" type="button" aria-label="Next save">›</button>
+            </div>
+
+
+            <button
+                id="save-back-button"
+                class="menu-button back-button"
+                data-i18n="menu.back"
+            >
+                BACK
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         STORY SCREEN
+    ====================================================== -->
+
+    <section
+        id="story-screen"
+        class="screen"
+    >
+
+
+        <!-- BACKGROUND -->
+
+        <div id="background"></div>
+
+        <img
+            id="vignette"
+            src="assets/blur.png"
+            alt=""
+            aria-hidden="true"
+            draggable="false"
+        >
+
+        <!-- SHADER LAYER (Ultra quality dynamic lighting) -->
+        <div id="shader-layer">
+            <canvas id="shader-canvas"></canvas>
+        </div>
+
+        <!-- Inline GLSL keeps Ultra shaders available when opened as a local HTML file. -->
+        <script id="scene-vertex-shader" type="x-shader/x-vertex">
+            attribute vec2 a_position;
+            varying vec2 v_position;
+            void main() {
+                gl_Position = vec4(a_position, 0.0, 1.0);
+                v_position = a_position * 0.5 + 0.5;
+            }
+        </script>
+
+        <script id="scene-fragment-shader" type="x-shader/x-fragment">
+            precision mediump float;
+            uniform vec2 u_mousePosition;
+            uniform float u_lightRadius;
+            uniform float u_time;
+            uniform vec2 u_eyeAlice;
+            uniform vec2 u_eyeZ;
+            uniform float u_eyeRadiusAlice;
+            uniform float u_eyeRadiusZ;
+            uniform float u_aspect;
+            varying vec2 v_position;
+
+            void main() {
+                float d = distance(v_position, u_mousePosition);
+                float light = 1.0 - smoothstep(0.0, u_lightRadius, d);
+                float floorMask = 1.0 - smoothstep(0.28, 0.44, v_position.y);
+                float wave = sin(v_position.x * 34.0 + u_time * 1.4 + sin(v_position.y * 22.0)) * 0.5 + 0.5;
+                float reflection = floorMask * wave * 0.14;
+                float aliceDistance = length((v_position - u_eyeAlice) * vec2(u_aspect, 1.0));
+                float zDistance = length((v_position - u_eyeZ) * vec2(u_aspect, 1.0));
+                float aliceGlow = exp(-aliceDistance * aliceDistance / max(u_eyeRadiusAlice * u_eyeRadiusAlice, 0.00001));
+                float zGlow = exp(-zDistance * zDistance / max(u_eyeRadiusZ * u_eyeRadiusZ, 0.00001));
+                float eyeGlow = max(aliceGlow, zGlow);
+                vec3 color = mix(vec3(reflection * 0.55), vec3(0.08, 1.0, 0.015), eyeGlow * 0.90);
+                float opacity = clamp(0.38 * (1.0 - light) + eyeGlow * 0.50 + reflection * 0.2, 0.0, 0.88);
+                gl_FragColor = vec4(color, opacity);
+            }
+        </script>
+
+        <!-- WEATHER -->
+
+        <div id="weather"></div>
+
+        <!-- CHARACTERS -->
+
+        <div id="characters">
+
+            <img
+                id="alice"
+                class="character"
+                src="assets/characters/alice/Alice001.png"
+                alt="Alice"
+                draggable="false"
+            >
+
+            <img
+                id="z"
+                class="character"
+                alt="Z"
+                draggable="false"
+            >
+
+            <img
+                id="corrode"
+                class="character corrode-character"
+                src="assets/characters/corrode/Corrode001.png"
+                alt="Corrode"
+                draggable="false"
+                style="visibility:hidden;opacity:0"
+            >
+
+        </div>
+
+
+        <!-- DIALOGUE -->
+
+        <div id="dialogue-box">
+
+            <div id="speaker">
+                Alice
+            </div>
+
+            <div id="dialogue-text"></div>
+
+
+            <button
+                id="next-button"
+                data-i18n="story.next"
+            >
+                NEXT
+            </button>
+
+        </div>
+
+        <video id="cutscene-video" class="story-cutscene-video" playsinline preload="auto" aria-label="Confronting cutscene"></video>
+
+        <!-- VN MENU BUTTON -->
+
+        <button
+            id="vn-menu-button"
+            class="vn-menu-button"
+            aria-label="Open menu"
+            type="button"
+        >
+            ☰
+        </button>
+
+
+        <!-- VN MENU -->
+
+        <div
+            id="vn-menu"
+            class="vn-menu"
+        >
+
+            <div class="vn-menu-panel">
+
+                <img class="vn-menu-art" src="assets/images/title/alicenz.png" alt="" aria-hidden="true" draggable="false">
+
+                <div
+                    id="vn-menu-title"
+                    class="vn-menu-title"
+                    data-i18n="vn.menu"
+                >
+                    MENU
+                </div>
+
+
+                <button
+                    id="vn-continue"
+                    class="vn-menu-option"
+                    data-i18n="vn.continue"
+                    type="button"
+                >
+                    CONTINUE
+                </button>
+
+
+                <button
+                    id="vn-back-line"
+                    class="vn-menu-option"
+                    data-i18n="vn.back"
+                    type="button"
+                >
+                    BACK
+                </button>
+
+
+                <button
+                    id="vn-save"
+                    class="vn-menu-option"
+                    data-i18n="vn.save"
+                    type="button"
+                >
+                    SAVE
+                </button>
+
+
+                <button
+                    id="vn-load"
+                    class="vn-menu-option"
+                    data-i18n="vn.load"
+                    type="button"
+                >
+                    LOAD
+                </button>
+
+
+                <button
+                    id="vn-back-menu"
+                    class="vn-menu-option"
+                    data-i18n="vn.backMenu"
+                    type="button"
+                >
+                    BACK TO MENU
+                </button>
+
+
+                <button
+                    id="vn-close"
+                    class="vn-menu-option"
+                    data-i18n="vn.close"
+                    type="button"
+                >
+                    CLOSE
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         AUDIO
+    ====================================================== -->
+
+    <audio
+        id="menu-music"
+        src="assets/audio/music/menu.ogg"
+        preload="auto"
+        loop
+    ></audio>
+
+
+    <audio
+        id="menu2-music"
+        preload="auto"
+        loop
+    ></audio>
+
+
+    <audio
+        id="story-music"
+        preload="auto"
+        loop
+    ></audio>
+
+
+    <audio
+        id="text-sound"
+        src="assets/audio/sfx/text.ogg"
+        preload="auto"
+    ></audio>
+
+
+    <audio
+        id="button-sound"
+        src="assets/audio/sfx/button.ogg"
+        preload="auto"
+    ></audio>
+
+    <audio
+        id="hover-sound"
+        src="assets/audio/sfx/hover.mp3"
+        preload="auto"
+    ></audio>
+
+
+    <audio
+        id="warning-sound"
+        src="assets/audio/music/broadcast.mp3"
+        preload="auto"
+    ></audio>
+
+
+    <audio
+        id="flashlight-sound"
+        src="assets/audio/sfx/flashlight.mp3"
+        preload="auto"
+    ></audio>
+
+
+</div>
+
+<!-- JavaScript principal -->
+<script src="script.js"></script>
+
+</body> 
+ 
+</html> 

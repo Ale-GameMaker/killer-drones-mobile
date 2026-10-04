@@ -1,0 +1,552 @@
+# Killer Drones: An MD AU Story
+# Chapter: Prologue
+
+@background abandonedHall
+@weather snow
+@music abandoned_hall
+
+Alice @sprite 002
+
+[en]
+Another normal day...
+[/en]
+
+[pt-BR]
+Mais um dia normal...
+[/pt-BR]
+
+[es-419]
+Otro día normal...
+[/es-419]
+
+Alice @sprite 003
+
+[en]
+No, wait, it's night-
+[/en]
+
+[pt-BR]
+Não, espera, é noite-
+[/pt-BR]
+
+[es-419]
+No, espera, es de noche-
+[/es-419]
+
+Alice @sprite 002
+
+[en]
+Welp, should meet Z and E.R.R.O.R. soon...
+[/en]
+
+[pt-BR]
+Bom, devo encontrar Z e E.R.R.O.R. em breve...
+[/pt-BR]
+
+[es-419]
+Bueno, debería encontrarme con Z y E.R.R.O.R. pronto...
+[/es-419]
+
+Alice @sprite 001
+
+Z @sprite 001
+
+[en]
+Looking for me, Alice?
+[/en]
+
+[pt-BR]
+Procurando por mim, Alice?
+[/pt-BR]
+
+[es-419]
+¿Me estabas buscando, Alice?
+[/es-419]
+
+Alice @sprite 004
+
+[en]
+Mmh~ you always know where to appear~ *chuckles*
+[/en]
+
+[pt-BR]
+Mmh~ você sempre sabe onde aparecer~ *risos*
+[/pt-BR]
+
+[es-419]
+Mmh~ siempre sabes dónde aparecer~ *ríe*
+[/es-419]
+
+Z @sprite 002
+
+[en]
+Y-yeah, hah...
+[/en]
+
+[pt-BR]
+S-sim, haha...
+[/pt-BR]
+
+[es-419]
+S-sí, jeje...
+[/es-419]
+
+Z @sprite 001
+
+[en]
+C'mon, we should keep moving. We can't stay out here for long.
+[/en]
+
+[pt-BR]
+Vamos, é melhor continuar andando. Não dá pra ficar aqui fora por muito tempo.
+[/pt-BR]
+
+[es-419]
+Vamos, será mejor seguir caminando. No podemos quedarnos aquí afuera mucho tiempo.
+[/es-419]
+
+Alice @sprite 004
+
+[en]
+Fine by me, let's go *chuckles*
+[/en]
+
+[pt-BR]
+Por mim tudo bem, vamos *risos*
+[/pt-BR]
+
+[es-419]
+Por mí está bien, vamos *ríe*
+[/es-419]
+
+@background outside
+
+Alice @sprite 001
+
+Z @sprite 001
+
+[en]
+You know... I thought you'd already be on your way to the next stop.
+[/en]
+
+[pt-BR]
+Sabe... achei que você já estaria indo pro próximo lugar.
+[/pt-BR]
+
+[es-419]
+Sabes... pensé que ya estarías de camino al próximo lugar.
+[/es-419]
+
+Alice @sprite 002
+
+[en]
+And miss the opportunity to walk through a freezing hallway at night? No way.
+[/en]
+
+[pt-BR]
+E perder a oportunidade de andar por um corredor congelante à noite? Nem pensar.
+[/pt-BR]
+
+[es-419]
+¿Y perder la oportunidad de caminar por un pasillo congelado de noche? Ni hablar.
+[/es-419]
+
+Z @sprite 002
+
+[en]
+Heh... fair enough.
+[/en]
+
+[pt-BR]
+Heh... justo.
+[/pt-BR]
+
+[es-419]
+Je... vale.
+[/es-419]
+
+Alice @sprite 001
+
+[en]
+Besides... it's quieter out here.
+[/en]
+
+[pt-BR]
+Além disso... aqui fora é mais quieto.
+[/pt-BR]
+
+[es-419]
+Además... aquí afuera es más tranquilo.
+[/es-419]
+
+Z @sprite 001
+
+[en]
+Too quiet.
+[/en]
+
+[pt-BR]
+Quieto demais.
+[/pt-BR]
+
+[es-419]
+Demasiado tranquilo.
+[/es-419]
+
+Z @sprite 003
+
+[en]
+Too... too quiet...
+[/en]
+
+[pt-BR]
+Muito, muuuuiito quieto....
+[/pt-BR]
+
+[es-419]
+Demasiado... demasiado tranquilo...
+[/es-419]
+
+Alice @sprite 005
+
+[en]
+Brr... it's even colder than I thought...
+[/en]
+
+[pt-BR]
+Brr... está ainda mais frio do que eu pensei...
+[/pt-BR]
+
+[es-419]
+Brr... hace aún más frío de lo que pensaba...
+[/es-419]
+
+Z @sprite 003
+
+[en]
+Told you we shouldn't stay out here for too long.
+[/en]
+
+[pt-BR]
+Eu te avisei que não deveríamos ficar muito tempo aqui fora.
+[/pt-BR]
+
+[es-419]
+Te dije que no deberíamos quedarnos afuera por mucho tiempo.
+[/es-419]
+
+Alice @sprite 005
+
+[en]
+I'm really cold...
+[/en]
+
+[pt-BR]
+Estou com muito frio...
+[/pt-BR]
+
+[es-419]
+Tengo mucho frío...
+[/es-419]
+
+Z @sprite 003
+
+[en]
+Let's find somewhere to get out of the wind, then...
+[/en]
+
+[pt-BR]
+Então vamos achar algum lugar pra escapar do vento...
+[/pt-BR]
+
+[es-419]
+Busquemos un lugar donde resguardarnos del viento, entonces...
+[/es-419]
+
+Alice @sprite 005
+
+[en]
+Yeah... somewhere to wait out the storm. Then we move on.
+[/en]
+
+[pt-BR]
+É... um lugar pra esperar a tempestade passar. Depois seguimos.
+[/pt-BR]
+
+[es-419]
+Sí... un lugar para esperar que pase la tormenta. Después seguimos.
+[/es-419]
+
+@choice
+
+@option go_to_ruins
+
+[en]
+Check the ruins ahead.
+[/en]
+
+[pt-BR]
+Ver as ruínas adiante.
+[/pt-BR]
+
+[es-419]
+Revisar las ruinas de adelante.
+[/es-419]
+
+@option stay_outside
+
+[en]
+Stay outside.
+[/en]
+
+[pt-BR]
+Ficar lá fora.
+[/pt-BR]
+
+[es-419]
+Quedarse afuera.
+[/es-419]
+
+@endchoice
+
+
+@label go_to_ruins
+
+@background files
+@music lament
+@weather snow
+
+Alice @sprite 005
+
+[en]
+Those ruins might block the wind for a while...
+[/en]
+
+[pt-BR]
+Essas ruínas talvez bloqueiem o vento por um tempo...
+[/pt-BR]
+
+[es-419]
+Quizás esas ruinas nos protejan del viento por un rato...
+[/es-419]
+
+Z @sprite 003
+
+[en]
+This place is completely abandoned.
+[/en]
+
+[pt-BR]
+Esse lugar está completamente abandonado.
+[/pt-BR]
+
+[es-419]
+Este lugar está completamente abandonado.
+[/es-419]
+
+Alice @sprite 003
+
+[en]
+There isn't even a door left...
+[/en]
+
+[pt-BR]
+Nem sobrou uma porta...
+[/pt-BR]
+
+[es-419]
+Ni siquiera queda una puerta...
+[/es-419]
+
+Z @sprite 001
+
+[en]
+We can rest here until the storm eases. Then we move on.
+[/en]
+
+[pt-BR]
+Podemos descansar aqui até a tempestade passar. Depois seguimos.
+[/pt-BR]
+
+[es-419]
+Podemos descansar aquí hasta que pase la tormenta. Después seguimos.
+[/es-419]
+
+Alice @sprite 002
+
+[en]
+Wait. There's a light deeper inside.
+[/en]
+
+[pt-BR]
+Espera. Tem uma luz lá no fundo.
+[/pt-BR]
+
+[es-419]
+Espera. Hay una luz más adentro.
+[/es-419]
+
+Z @sprite 004
+
+[en]
+That shouldn't be working. The whole place is dead.
+[/en]
+
+[pt-BR]
+Isso não devia estar funcionando. O lugar inteiro está sem energia.
+[/pt-BR]
+
+[es-419]
+Eso no debería funcionar. Todo el lugar está sin energía.
+[/es-419]
+
+Alice @sprite 006
+
+[en]
+Then what is making it flicker?
+[/en]
+
+[pt-BR]
+Então o que está fazendo ela piscar?
+[/pt-BR]
+
+[es-419]
+Entonces, ¿qué la hace parpadear?
+[/es-419]
+
+Z @sprite 004
+
+[en]
+Alice, get back outside. Now.
+[/en]
+
+[pt-BR]
+Alice, volta pra fora. Agora.
+[/pt-BR]
+
+[es-419]
+Alice, vuelve afuera. Ahora.
+[/es-419]
+
+@cutscene confronting
+
+@jump corrode_battle
+
+
+@label stay_outside
+
+@background outside
+
+Alice @sprite 005
+
+[en]
+Maybe we should stay a little longer...
+[/en]
+
+[pt-BR]
+Talvez devêssemos ficar mais um pouco...
+[/pt-BR]
+
+[es-419]
+Quizás deberíamos quedarnos un poco más...
+[/es-419]
+
+Z @sprite 001
+
+[en]
+For what? The cold is getting worse.
+[/en]
+
+[pt-BR]
+Pra quê? O frio só está piorando.
+[/pt-BR]
+
+[es-419]
+¿Para qué? El frío está empeorando.
+[/es-419]
+
+Alice @sprite 006
+
+[en]
+Listen. Something's moving under the snow.
+[/en]
+
+[pt-BR]
+Escuta. Tem alguma coisa se mexendo debaixo da neve.
+[/pt-BR]
+
+[es-419]
+Escucha. Algo se mueve debajo de la nieve.
+[/es-419]
+
+Z @sprite 004
+
+[en]
+Stay behind me.
+[/en]
+
+[pt-BR]
+Fica atrás de mim.
+[/pt-BR]
+
+[es-419]
+Quédate detrás de mí.
+[/es-419]
+
+Alice @sprite 006
+
+[en]
+It's coming from the ruins...
+[/en]
+
+[pt-BR]
+Está vindo das ruínas...
+[/pt-BR]
+
+[es-419]
+Viene de las ruinas...
+[/es-419]
+
+Z @sprite 004
+
+[en]
+No. It's coming from behind us.
+[/en]
+
+[pt-BR]
+Não. Está vindo de trás da gente.
+[/pt-BR]
+
+[es-419]
+No. Viene de detrás de nosotros.
+[/es-419]
+
+Alice @sprite 006
+
+[en]
+Then why are its footsteps stopping when we stop?
+[/en]
+
+[pt-BR]
+Então por que os passos param quando a gente para?
+[/pt-BR]
+
+[es-419]
+Entonces, ¿por qué sus pasos se detienen cuando nosotros paramos?
+[/es-419]
+
+Z @sprite 004
+
+[en]
+Alice... don't turn around.
+[/en]
+
+[pt-BR]
+Alice... não olha pra trás.
+[/pt-BR]
+
+[es-419]
+Alice... no mires atrás.
+[/es-419]
+
+@jump corrode_battle

@@ -1,0 +1,17 @@
+# Chapter: Chapter 2
+# Banner: shards
+# Chapter 2 structure is ready. Add its story below when you are ready.
+# Suggested scene setup:
+# @background outside
+# @weather snow
+# @music abandoned_hall
+# Alice @sprite 002
+# [en]
+# English dialogue.
+# [/en]
+# [pt-BR]
+# Diálogo em português.
+# [/pt-BR]
+# [es-419]
+# Diálogo en español.
+# [/es-419]
