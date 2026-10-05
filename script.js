@@ -3549,6 +3549,18 @@ function setupEvents() {
         }
     });
 
+    if (APP_LAYOUT === "mobile") {
+        dom.warningCommandInput?.setAttribute("disabled", "");
+        document.querySelectorAll("[data-warning-command]").forEach(button => {
+            button.addEventListener("click", () => {
+                const command = button.getAttribute("data-warning-command");
+                if (command === "y" || command === "n") {
+                    void answerWarning(command === "y");
+                }
+            });
+        });
+    }
+
     if (dom.startButton) {
         dom.startButton.addEventListener(
             "click",
@@ -3800,6 +3812,7 @@ function setupEvents() {
             if (dom.warningScreen?.classList.contains("active")) {
                 playWarningBroadcast();
                 if (event.target === dom.warningCommandInput) return;
+                if (APP_LAYOUT === "mobile") return;
                 if (event.key.toLowerCase() === "y") {
                     event.preventDefault();
                     await answerWarning(true);

@@ -7,7 +7,7 @@
 
     <meta
         name="viewport"
-        content="width=device-width, initial-scale=1.0"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     >
 
     <title>
@@ -169,6 +169,10 @@
                         <span class="warning-block-cursor" aria-hidden="true"></span>
                     </span>
                 </label>
+                <div class="warning-touch-options" role="group" aria-labelledby="warning-prompt">
+                    <button class="warning-touch-button" type="button" data-warning-command="y">[Y]</button>
+                    <button class="warning-touch-button" type="button" data-warning-command="n">[N]</button>
+                </div>
             </div>
         </div>
     </section>
@@ -370,7 +374,7 @@
                     <input id="settings-flashing-lights" type="checkbox">
                 </div>
 
-                <div class="kd-setting-row">
+                <div class="kd-setting-row" id="mouse-light-setting">
                     <label class="setting-label" for="settings-mouse-light">MOUSE LIGHT (L)</label>
                     <input id="settings-mouse-light" type="checkbox">
                 </div>
