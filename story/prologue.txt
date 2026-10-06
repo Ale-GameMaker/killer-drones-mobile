@@ -311,6 +311,7 @@ Quedarse afuera.
 
 
 @label go_to_ruins
+@achievement ruinsRoute
 
 @background files
 @music lament
@@ -434,6 +435,7 @@ Alice, vuelve afuera. Ahora.
 
 
 @label stay_outside
+@achievement stormRoute
 
 @background outside
 

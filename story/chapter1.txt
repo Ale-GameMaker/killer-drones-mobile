@@ -165,6 +165,7 @@ Ela acabou de ligar sozinha.
 Acaba de encenderse sola.
 [/es-419]
 
+@achievement movingSignal
 SYSTEM @sprite 001
 
 [en]

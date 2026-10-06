@@ -1,17 +1,409 @@
 # Chapter: Chapter 2
 # Banner: shards
-# Chapter 2 structure is ready. Add its story below when you are ready.
-# Suggested scene setup:
-# @background outside
-# @weather snow
-# @music abandoned_hall
-# Alice @sprite 002
-# [en]
-# English dialogue.
-# [/en]
-# [pt-BR]
-# Diálogo em português.
-# [/pt-BR]
-# [es-419]
-# Diálogo en español.
-# [/es-419]
+@background outside
+@weather snow
+@music frostSpikes
+
+Alice @sprite 006
+
+[en]
+The signal dies, but its last pulse keeps pointing north. Alice and Z leave the ruins behind and follow it through the whiteout. Every few minutes the snow stops falling for a heartbeat, as if something beneath the ground is drawing in air.
+[/en]
+[pt-BR]
+O sinal desaparece, mas seu último pulso continua apontando para o norte. Alice e Z deixam as ruínas para trás e seguem por entre a neve. A cada poucos minutos, os flocos param por um instante, como se algo sob o chão estivesse puxando o ar.
+[/pt-BR]
+[es-419]
+La señal desaparece, pero su último pulso sigue apuntando al norte. Alice y Z dejan atrás las ruinas y avanzan entre la nieve. Cada pocos minutos, los copos se detienen por un instante, como si algo bajo el suelo estuviera inhalando.
+[/es-419]
+
+Z @sprite 004
+
+[en]
+The trail is too clean. No footprints, no broken branches, no windblown snow over the marks. Someone wants us to find this place. That doesn't mean we have to walk into it with our eyes closed.
+[/en]
+[pt-BR]
+A trilha está limpa demais. Sem pegadas, galhos quebrados ou neve cobrindo as marcas. Alguém quer que a gente encontre esse lugar. Isso não significa que precisamos entrar sem prestar atenção.
+[/pt-BR]
+[es-419]
+El rastro está demasiado limpio. No hay huellas, ramas rotas ni nieve cubriendo las marcas. Alguien quiere que encontremos este lugar. Eso no significa que debamos entrar sin estar atentos.
+[/es-419]
+
+Alice @sprite 002
+
+[en]
+I can hear it again. Three notes, then a pause. It sounds like a distress call, but it keeps changing pitch whenever I get close. Maybe it's bouncing off the cliffs.
+[/en]
+[pt-BR]
+Estou ouvindo de novo. Três notas e uma pausa. Parece um pedido de socorro, mas o tom muda quando chego perto. Talvez o som esteja ricocheteando nos paredões.
+[/pt-BR]
+[es-419]
+Vuelvo a oírlo. Tres notas y una pausa. Parece una llamada de auxilio, pero cambia de tono cuando me acerco. Quizá rebota contra los riscos.
+[/es-419]
+
+Z @sprite 003
+
+[en]
+Or it's moving. Stay close, and don't touch anything that glows. The last time a crystal lit up, Corrode knew exactly where we were.
+[/en]
+[pt-BR]
+Ou está se movendo. Fica perto e não toca em nada que brilhar. Da última vez que um cristal acendeu, Corrode soube exatamente onde estávamos.
+[/pt-BR]
+[es-419]
+O se está moviendo. No te alejes y no toques nada que brille. La última vez que se encendió un cristal, Corrode supo exactamente dónde estábamos.
+[/es-419]
+
+@action
+
+[en]
+The ground gives a dull crack beneath them. A long seam opens in the snow, revealing a stairwell descending under the ruined station. Pale blue light spills up from below. The signal repeats from somewhere in the dark.
+[/en]
+[pt-BR]
+O chão estala sob os dois. Uma fenda comprida se abre na neve e revela uma escadaria sob a estação em ruínas. Uma luz azulada sobe lá de baixo. O sinal se repete em algum ponto da escuridão.
+[/pt-BR]
+[es-419]
+El suelo cruje bajo sus pies. Una grieta larga se abre en la nieve y deja ver una escalera bajo la estación en ruinas. Desde abajo sube una luz azul pálida. La señal se repite en algún punto de la oscuridad.
+[/es-419]
+
+Alice @sprite 006
+
+[en]
+That isn't a natural cave entrance. Look at the cut edges. Somebody built those steps, then buried the whole place under the station.
+[/en]
+[pt-BR]
+Essa entrada não parece natural. Olha para as bordas cortadas. Alguém construiu esses degraus e depois enterrou tudo sob a estação.
+[/pt-BR]
+[es-419]
+Esa entrada no parece natural. Mira los bordes cortados. Alguien construyó esos escalones y luego enterró todo bajo la estación.
+[/es-419]
+
+Z @sprite 004
+
+[en]
+We can mark the entrance and circle around. But if the signal is coming from below, waiting gives Corrode more time to find it first.
+[/en]
+[pt-BR]
+Podemos marcar a entrada e dar a volta. Mas, se o sinal vem lá de baixo, esperar só dá mais tempo para Corrode encontrá-lo primeiro.
+[/pt-BR]
+[es-419]
+Podemos marcar la entrada y rodear el lugar. Pero si la señal viene de abajo, esperar solo le da más tiempo a Corrode para llegar primero.
+[/es-419]
+
+Alice @sprite 002
+
+[en]
+Then we go together. If I hear the notes change, I'll tell you. And if the stairs start moving, we're both turning around. No heroic speeches.
+[/en]
+[pt-BR]
+Então vamos juntos. Se eu ouvir as notas mudarem, te aviso. E, se os degraus começarem a se mover, nós dois voltamos. Sem discurso heroico.
+[/pt-BR]
+[es-419]
+Entonces bajamos juntos. Si oigo que cambian las notas, te aviso. Y si los escalones empiezan a moverse, nos damos la vuelta. Nada de discursos heroicos.
+[/es-419]
+
+@background moreAbandonedd
+@weather none
+
+@achievement belowStation
+Z @sprite 004
+
+[en]
+The stairwell ends in an underground passage. Ice coats the walls, and long crystal spikes hang from the ceiling like teeth. Their light is dim until the signal sounds; then each spike flashes in sequence, carrying the notes farther down.
+[/en]
+[pt-BR]
+A escadaria termina em uma passagem subterrânea. O gelo cobre as paredes, e cristais compridos pendem do teto como dentes. A luz é fraca, mas, quando o sinal toca, os cristais brilham em sequência e levam as notas para mais fundo.
+[/pt-BR]
+[es-419]
+La escalera termina en un pasaje subterráneo. El hielo cubre las paredes y largos cristales cuelgan del techo como dientes. Apenas brillan, pero cuando suena la señal, destellan en secuencia y llevan las notas más adentro.
+[/es-419]
+
+Alice @sprite 006
+
+[en]
+This is the source. I can feel the vibration in my teeth. The crystals aren't just repeating the signal; they're answering it. Something below is listening.
+[/en]
+[pt-BR]
+É daqui que vem o sinal. Sinto a vibração nos dentes. Os cristais não estão apenas repetindo o som; estão respondendo. Tem alguma coisa lá embaixo ouvindo.
+[/pt-BR]
+[es-419]
+De aquí viene la señal. Siento la vibración en los dientes. Los cristales no solo repiten el sonido: responden. Algo allá abajo está escuchando.
+[/es-419]
+
+Z @sprite 003
+
+[en]
+Then we keep our voices down. See those marks on the wall? They're scratches, but every line stops at the same height. Someone was measuring the tunnel while it grew.
+[/en]
+[pt-BR]
+Então vamos falar baixo. Está vendo as marcas na parede? São riscos, mas todos param na mesma altura. Alguém estava medindo o túnel enquanto ele crescia.
+[/pt-BR]
+[es-419]
+Entonces hablemos bajo. ¿Ves esas marcas en la pared? Son rasguños, pero todos terminan a la misma altura. Alguien medía el túnel mientras crecía.
+[/es-419]
+
+Alice @sprite 002
+
+[en]
+Some of the scratches are fresh. Whoever came through here dragged something heavy. The marks lead down the left passage, and the snow on them hasn't melted.
+[/en]
+[pt-BR]
+Alguns riscos são recentes. Quem passou por aqui arrastou algo pesado. As marcas seguem pelo corredor à esquerda, e a neve nelas ainda não derreteu.
+[/pt-BR]
+[es-419]
+Algunos rasguños son recientes. Quien pasó por aquí arrastró algo pesado. Las marcas siguen por el pasillo izquierdo y la nieve aún no se ha derretido.
+[/es-419]
+
+Z @sprite 004
+
+[en]
+The left tunnel is narrowing. I can squeeze through, but the spikes above it are cracked. If they fall, they'll block the only way back.
+[/en]
+[pt-BR]
+O túnel da esquerda está estreitando. Eu consigo passar, mas os cristais acima estão rachados. Se caírem, vão bloquear a única saída.
+[/pt-BR]
+[es-419]
+El túnel izquierdo se estrecha. Puedo pasar, pero los cristales de arriba están agrietados. Si caen, bloquearán la única salida.
+[/es-419]
+
+Alice @sprite 006
+
+[en]
+Then the wider tunnel it is. The signal sounds louder from there anyway. Look at the floor: those tiny blue fragments are all pointing the same direction.
+[/en]
+[pt-BR]
+Então vamos pelo túnel mais largo. O sinal está mais alto vindo dali. Olha para o chão: os pequenos fragmentos azuis apontam todos para a mesma direção.
+[/pt-BR]
+[es-419]
+Entonces iremos por el túnel más ancho. La señal suena más fuerte desde allí. Mira el suelo: esos fragmentos azules señalan todos hacia la misma dirección.
+[/es-419]
+
+@achievement crystalEcho
+@action
+
+[en]
+They follow the glittering trail into a chamber too broad for the light to reach its edges. Crystal columns rise from the floor, each filled with cloudy shapes. One resembles a hand pressed against glass.
+[/en]
+[pt-BR]
+Eles seguem o rastro brilhante até uma câmara larga demais para a luz alcançar as bordas. Colunas de cristal crescem do chão, cada uma com formas turvas em seu interior. Uma parece ter uma mão pressionada contra o vidro.
+[/pt-BR]
+[es-419]
+Siguen el rastro brillante hasta una cámara tan amplia que la luz no alcanza los bordes. Del suelo nacen columnas de cristal con formas turbias en su interior. Una parece tener una mano apoyada contra el vidrio.
+[/es-419]
+
+Alice @sprite 002
+
+[en]
+Z, there's a serial number here. It's from the old station network, but the rest has been scratched off. This place was catalogued before it was sealed.
+[/en]
+[pt-BR]
+Z, tem um número de série aqui. É da rede antiga da estação, mas rasparam o resto. Esse lugar foi catalogado antes de ser lacrado.
+[/pt-BR]
+[es-419]
+Z, hay un número de serie aquí. Es de la antigua red de la estación, pero borraron lo demás. Este lugar fue catalogado antes de que lo sellaran.
+[/es-419]
+
+Z @sprite 004
+
+[en]
+And somebody came back after the seal. These boot marks are newer than the ice. They stop in front of that column, then continue on the other side.
+[/en]
+[pt-BR]
+E alguém voltou depois do lacre. Essas marcas são mais novas que o gelo. Elas param diante daquela coluna e continuam do outro lado.
+[/pt-BR]
+[es-419]
+Y alguien volvió después del cierre. Estas huellas son más recientes que el hielo. Se detienen frente a esa columna y continúan al otro lado.
+[/es-419]
+
+Alice @sprite 006
+
+[en]
+The cloudy shape moved. I saw it. It leaned toward the sound, like it was trying to hear us through the crystal.
+[/en]
+[pt-BR]
+A forma turva se mexeu. Eu vi. Ela se inclinou na direção do som, como se tentasse nos ouvir através do cristal.
+[/pt-BR]
+[es-419]
+La forma turbia se movió. La vi. Se inclinó hacia el sonido, como si intentara oírnos a través del cristal.
+[/es-419]
+
+Z @sprite 003
+
+[en]
+It could be a reflection. Don't get closer. The signal is speeding up, and those columns are lighting one after another. Whatever is answering knows we're here now.
+[/en]
+[pt-BR]
+Pode ser um reflexo. Não chega mais perto. O sinal está acelerando, e as colunas estão acendendo uma após a outra. Seja lá o que responde, agora sabe que estamos aqui.
+[/pt-BR]
+[es-419]
+Podría ser un reflejo. No te acerques. La señal se acelera y las columnas se encienden una tras otra. Lo que sea que responde ya sabe que estamos aquí.
+[/es-419]
+
+@action
+
+[en]
+The pulses stop. Silence spreads through the chamber, swallowing the sound of their steps. Then a thin orange line appears behind the cloudy crystal, bright as a warning light.
+[/en]
+[pt-BR]
+Os pulsos param. O silêncio se espalha pela câmara e engole o som dos passos. Então uma linha laranja surge por trás do cristal turvo, brilhante como um sinal de alerta.
+[/pt-BR]
+[es-419]
+Los pulsos se detienen. El silencio se extiende por la cámara y se traga el ruido de sus pasos. Entonces aparece una fina línea naranja detrás del cristal turbio, brillante como una señal de alarma.
+[/es-419]
+
+Corrode @sprite 001
+
+[en]
+You followed the signal all the way down. I told you not to.
+[/en]
+[pt-BR]
+Vocês seguiram o sinal até aqui embaixo. Eu disse para não fazerem isso.
+[/pt-BR]
+[es-419]
+Siguieron la señal hasta aquí abajo. Les dije que no lo hicieran.
+[/es-419]
+
+Alice @sprite 006
+
+[en]
+You left it for us. You wanted us to find this place.
+[/en]
+[pt-BR]
+Você deixou o sinal para a gente. Queria que encontrássemos este lugar.
+[/pt-BR]
+[es-419]
+Tú dejaste la señal para nosotros. Querías que encontráramos este lugar.
+[/es-419]
+
+Corrode @sprite 001
+
+[en]
+I wanted to know if it would call to anyone else. It called to you. That means the signal has learned your voices.
+[/en]
+[pt-BR]
+Eu queria saber se isso chamaria mais alguém. Chamou vocês. Isso quer dizer que o sinal aprendeu as vozes de vocês.
+[/pt-BR]
+[es-419]
+Quería saber si llamaría a alguien más. Los llamó a ustedes. Eso significa que la señal aprendió sus voces.
+[/es-419]
+
+Z @sprite 004
+
+[en]
+What is in the columns? Who sealed this place, and why were you watching us?
+[/en]
+[pt-BR]
+O que há dentro das colunas? Quem lacrou este lugar e por que estava nos observando?
+[/pt-BR]
+[es-419]
+¿Qué hay dentro de las columnas? ¿Quién selló este lugar y por qué nos vigilabas?
+[/es-419]
+
+Corrode @sprite 001
+
+[en]
+I was watching the entrance. The thing inside has been learning how to open it. Every time the crystals sing, the seal gets weaker.
+[/en]
+[pt-BR]
+Eu estava vigiando a entrada. A coisa lá dentro está aprendendo a abri-la. Cada vez que os cristais cantam, o lacre fica mais fraco.
+[/pt-BR]
+[es-419]
+Vigilaba la entrada. Lo que está adentro está aprendiendo a abrirla. Cada vez que cantan los cristales, el sello se debilita.
+[/es-419]
+
+Alice @sprite 002
+
+[en]
+You could have told us that instead of attacking us.
+[/en]
+[pt-BR]
+Você podia ter contado isso em vez de atacar a gente.
+[/pt-BR]
+[es-419]
+Podrías habérnoslo dicho en vez de atacarnos.
+[/es-419]
+
+Corrode @sprite 001
+
+[en]
+You were going to run. You always run. I needed to know whether you would keep running when it called you by name.
+[/en]
+[pt-BR]
+Vocês iam fugir. Vocês sempre fogem. Eu precisava saber se continuariam correndo quando aquilo chamasse vocês pelo nome.
+[/pt-BR]
+[es-419]
+Iban a huir. Siempre huyen. Necesitaba saber si seguirían corriendo cuando eso los llamara por su nombre.
+[/es-419]
+
+Z @sprite 003
+
+[en]
+We came to stop it from reaching anyone else. If you know how to close the seal, help us. If you don't, move out of the way.
+[/en]
+[pt-BR]
+Viemos impedir que isso alcance mais alguém. Se sabe como fechar o lacre, ajude. Se não sabe, saia da frente.
+[/pt-BR]
+[es-419]
+Vinimos a impedir que alcance a alguien más. Si sabes cómo cerrar el sello, ayúdanos. Si no, apártate.
+[/es-419]
+
+Corrode @sprite 001
+
+[en]
+I can't close it alone. The three notes have to be reversed from the relay chamber. But if we get the order wrong, every crystal down here will answer at once.
+[/en]
+[pt-BR]
+Não consigo fechar sozinha. As três notas precisam ser invertidas na câmara do retransmissor. Mas, se errarmos a ordem, todos os cristais daqui vão responder ao mesmo tempo.
+[/pt-BR]
+[es-419]
+No puedo cerrarlo sola. Hay que invertir las tres notas en la cámara repetidora. Pero si nos equivocamos, todos los cristales de aquí responderán a la vez.
+[/es-419]
+
+@achievement uneasyAlliance
+Alice @sprite 006
+
+[en]
+Then show us the way. We don't trust you, Corrode. But I believe you when you say that thing must stay sealed.
+[/en]
+[pt-BR]
+Então mostre o caminho. A gente não confia em você, Corrode. Mas acredito quando diz que aquilo precisa continuar lacrado.
+[/pt-BR]
+[es-419]
+Entonces guíanos. No confiamos en ti, Corrode. Pero te creo cuando dices que eso debe seguir sellado.
+[/es-419]
+
+@action
+
+[en]
+Corrode turns toward the deepest tunnel. For a moment her orange eyes brighten, and every crystal in the chamber answers with the same three notes. Behind them, the cloudy shapes press against the walls of their columns.
+[/en]
+[pt-BR]
+Corrode se vira para o túnel mais profundo. Por um instante, seus olhos laranja brilham mais forte, e todos os cristais da câmara respondem com as mesmas três notas. Atrás deles, as formas turvas pressionam as paredes das colunas.
+[/pt-BR]
+[es-419]
+Corrode se vuelve hacia el túnel más profundo. Por un instante, sus ojos naranjas brillan con más fuerza y todos los cristales responden con las mismas tres notas. Detrás de ellos, las formas turbias presionan las paredes de sus columnas.
+[/es-419]
+
+Z @sprite 004
+
+[en]
+That wasn't the signal. It came from behind the seal.
+[/en]
+[pt-BR]
+Esse não foi o sinal. Veio de trás do lacre.
+[/pt-BR]
+[es-419]
+Esa no fue la señal. Vino de detrás del sello.
+[/es-419]
+
+Corrode @sprite 001
+
+[en]
+Now you understand why I was afraid.
+[/en]
+[pt-BR]
+Agora vocês entendem por que eu estava com medo.
+[/pt-BR]
+[es-419]
+Ahora entienden por qué tenía miedo.
+[/es-419]
+
+@hide Corrode

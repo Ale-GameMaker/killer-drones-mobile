@@ -7,15 +7,16 @@
 Alice @sprite 006
 
 [en]
-The air folds around them. Snow vanishes, replaced by a cavern of floating crystal shards.
+The air folds around them. The snow disappears, revealing the abandoned records hall where they took shelter.
 [/en]
 [pt-BR]
-O ar se dobra ao redor deles. A neve desaparece, substituída por uma caverna de fragmentos de cristal flutuantes.
+O ar se dobra ao redor deles. A neve desaparece, revelando o arquivo abandonado onde se abrigaram.
 [/pt-BR]
 [es-419]
-El aire se pliega a su alrededor. La nieve desaparece y da paso a una caverna de fragmentos de cristal flotantes.
+El aire se pliega a su alrededor. La nieve desaparece y revela el archivo abandonado donde se refugiaron.
 [/es-419]
 
+@achievement firstContact
 Corrode @sprite 001
 
 [en]
@@ -88,151 +89,35 @@ Ela está lançando fragmentos! Preciso de uma abertura!
 ¡Está lanzando fragmentos! ¡Necesito una oportunidad!
 [/es-419]
 
-@choice
-@option boss_dodge
-[en]
-Dodge through the falling shards.
-[/en]
-[pt-BR]
-Desviar dos fragmentos que estão caindo.
-[/pt-BR]
-[es-419]
-Esquivar los fragmentos que caen.
-[/es-419]
-@option boss_push
-[en]
-Push straight through the attack.
-[/en]
-[pt-BR]
-Avançar direto pelo ataque.
-[/pt-BR]
-[es-419]
-Avanzar de frente a través del ataque.
-[/es-419]
-@endchoice
+@action
 
-@label boss_dodge
-Z @sprite 003
 [en]
-Z slips between the shards. One clips his wing, but he reaches the crystal floor.
+Alice scrambles toward the right and disappears from view as Z steps forward to face Corrode alone.
 [/en]
 [pt-BR]
-Z passa entre os fragmentos. Um deles acerta sua asa, mas ele alcança o chão de cristal.
+Alice se arrasta para a direita e sai de quadro, enquanto Z avança para enfrentar Corrode sozinho.
 [/pt-BR]
 [es-419]
-Z se desliza entre los fragmentos. Uno le roza el ala, pero llega al suelo de cristal.
-[/es-419]
-@jump boss_second_move
-
-@label boss_push
-Z @sprite 004
-[en]
-Z shields his face and charges. The shards scrape his armor, but he keeps moving.
-[/en]
-[pt-BR]
-Z protege o rosto e avança. Os fragmentos raspam sua armadura, mas ele não para.
-[/pt-BR]
-[es-419]
-Z se cubre el rostro y carga. Los fragmentos raspan su armadura, pero no se detiene.
-[/es-419]
-@jump boss_second_move
-
-@label boss_second_move
-Corrode @sprite 001
-[en]
-You still think this is about winning?
-[/en]
-[pt-BR]
-Você ainda acha que isso é sobre vencer?
-[/pt-BR]
-[es-419]
-¿Todavía crees que esto se trata de ganar?
+Alice se arrastra hacia la derecha y sale de cuadro mientras Z avanza para enfrentar a Corrode solo.
 [/es-419]
 
-Alice @sprite 006
-[en]
-Z, the bright shard on her arm! That's where the cracks are spreading!
-[/en]
-[pt-BR]
-Z, o fragmento brilhante no braço dela! É dali que as rachaduras estão se espalhando!
-[/pt-BR]
-[es-419]
-¡Z, el fragmento brillante de su brazo! ¡De ahí se están extendiendo las grietas!
-[/es-419]
+@battle corrode
 
-@choice
-@option boss_strike
-[en]
-Aim for the cracked shard.
-[/en]
-[pt-BR]
-Mirar no fragmento rachado.
-[/pt-BR]
-[es-419]
-Apuntar al fragmento agrietado.
-[/es-419]
-@option boss_protect
-[en]
-Pull Alice clear before striking.
-[/en]
-[pt-BR]
-Tirar Alice dali antes de atacar.
-[/pt-BR]
-[es-419]
-Apartar a Alice antes de atacar.
-[/es-419]
-@endchoice
+@achievement standYourGround
+@action
 
-@label boss_strike
-Z @sprite 004
 [en]
-Z lunges for the cracked shard. Corrode twists away, and the blow only breaks its outer edge.
+Corrode's cracked arm crystal shatters against the concrete floor. The remaining shards clatter across the abandoned hall.
 [/en]
 [pt-BR]
-Z avança contra o fragmento rachado. Corrode se esquiva, e o golpe quebra apenas a borda externa.
+O cristal rachado no braço de Corrode se estilhaça contra o chão de concreto. Os fragmentos restantes ecoam pelo arquivo abandonado.
 [/pt-BR]
 [es-419]
-Z se lanza hacia el fragmento agrietado. Corrode se aparta y el golpe solo rompe el borde exterior.
-[/es-419]
-@jump boss_confrontation
-
-@label boss_protect
-Z @sprite 003
-[en]
-Z pulls Alice out of the line of fire. Corrode's next strike misses, leaving her exposed for a moment.
-[/en]
-[pt-BR]
-Z puxa Alice para fora da linha de ataque. O próximo golpe de Corrode erra, deixando-a exposta por um instante.
-[/pt-BR]
-[es-419]
-Z aparta a Alice de la línea de ataque. El siguiente golpe de Corrode falla y la deja expuesta por un instante.
-[/es-419]
-@jump boss_confrontation
-
-@label boss_confrontation
-Alice @sprite 006
-[en]
-The crystal is breaking! Z, now!
-[/en]
-[pt-BR]
-O cristal está quebrando! Z, agora!
-[/pt-BR]
-[es-419]
-¡El cristal se está rompiendo! ¡Z, ahora!
-[/es-419]
-
-Z @sprite 004
-[en]
-Z knocks the shard free. The floating fragments crash down, and the cavern begins to collapse.
-[/en]
-[pt-BR]
-Z derruba o fragmento. Os pedaços flutuantes caem, e a caverna começa a desabar.
-[/pt-BR]
-[es-419]
-Z arranca el fragmento. Los trozos flotantes caen y la caverna empieza a derrumbarse.
+El cristal agrietado del brazo de Corrode se rompe contra el piso de concreto. Los fragmentos restantes resuenan por el archivo abandonado.
 [/es-419]
 
 Corrode @sprite 001
+
 [en]
 This isn't over. You have no idea what you're walking into.
 [/en]
@@ -244,6 +129,7 @@ Esto no ha terminado. No tienen idea de a qué se están enfrentando.
 [/es-419]
 
 Alice @sprite 006
+
 [en]
 Wait! Who are you?
 [/en]
@@ -255,6 +141,7 @@ Espera! Quem é você?
 [/es-419]
 
 Z @sprite 004
+
 [en]
 No time. Move! We'll deal with her if she finds us again.
 [/en]

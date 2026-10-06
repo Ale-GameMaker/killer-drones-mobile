@@ -14,7 +14,7 @@ const LEGACY_SAVE_PREFIX = SAVE_PREFIX;
 const ACHIEVEMENTS_KEY = "killer-drones-achievements";
 
 const SAVE_VERSION = 4;
-const SAVE_SLOTS = 6;
+const SAVE_SLOTS = 7;
 
 const DEFAULT_SETTINGS = {
     showFPS: true,
@@ -34,7 +34,8 @@ const MUSIC = {
     menu3: "assets/audio/music/menu3.ogg",
     abandoned_hall: "assets/audio/music/abandoned_hall.ogg",
     lament: "assets/audio/music/lament.mp3",
-    holyDrama: "assets/audio/music/holyDrama.ogg"
+    holyDrama: "assets/audio/music/holyDrama.ogg",
+    frostSpikes: "assets/audio/music/frost spikes.mpeg"
 };
 
 const BACKGROUNDS = {
@@ -74,11 +75,28 @@ const UI_TEXT = {
         playTitle: "PLAY",
         chapters: "CHAPTERS",
         achievements: "ACHIEVEMENTS",
+        achievementUnlocked: "ACHIEVEMENT UNLOCKED",
         playChapter: "PLAY CHAPTER",
         firstSteps: "FIRST STEPS",
         firstStepsDetail: "Begin the story.",
         intoTheFiles: "INTO THE FILES",
         intoTheFilesDetail: "Reach the abandoned files.",
+        ruinsRoute: "SHELTER SEEKER",
+        ruinsRouteDetail: "Choose the abandoned station route.",
+        stormRoute: "NO COVER",
+        stormRouteDetail: "Take the exposed route through the storm.",
+        firstContact: "FIRST CONTACT",
+        firstContactDetail: "Meet the drone following Alice and Z.",
+        standYourGround: "STAND YOUR GROUND",
+        standYourGroundDetail: "Defeat Corrode in the records hall.",
+        movingSignal: "NOT ALONE",
+        movingSignalDetail: "Find the signal from another drone.",
+        belowStation: "BELOW THE STATION",
+        belowStationDetail: "Enter the buried passage beneath the ruins.",
+        crystalEcho: "ECHOES IN ICE",
+        crystalEchoDetail: "Reach the chamber that repeats the signal.",
+        uneasyAlliance: "UNEASY ALLIANCE",
+        uneasyAllianceDetail: "Agree to follow Corrode deeper.",
         chapterComplete: "TO BE CONTINUED",
         chapterCompleteDetail: "Finish the available chapter.",
         warningTitle: "SYSTEM WARNING",
@@ -107,6 +125,10 @@ const UI_TEXT = {
         musicRole: "MUSIC",
         storyReferenceRole: "STORY REFERENCE",
         resetSettings: "RESET SETTINGS",
+        resetData: "RESET DATA",
+        confirmResetData: "Reset all game data? This permanently deletes every save, achievement, and setting.",
+        noSave: "NO SAVE",
+        noSaveDetail: "Start a game without saving progress.",
         language: "LANGUAGE",
         menu: "MENU",
         menuContinue: "CONTINUE",
@@ -159,11 +181,28 @@ const UI_TEXT = {
         playTitle: "JOGAR",
         chapters: "CAPÍTULOS",
         achievements: "CONQUISTAS",
+        achievementUnlocked: "CONQUISTA DESBLOQUEADA",
         playChapter: "JOGAR CAPÍTULO",
         firstSteps: "PRIMEIROS PASSOS",
         firstStepsDetail: "Comece a história.",
         intoTheFiles: "RUMO AOS ARQUIVOS",
         intoTheFilesDetail: "Chegue aos arquivos abandonados.",
+        ruinsRoute: "À PROCURA DE ABRIGO",
+        ruinsRouteDetail: "Escolha o caminho da estação abandonada.",
+        stormRoute: "SEM COBERTURA",
+        stormRouteDetail: "Siga pelo caminho exposto à tempestade.",
+        firstContact: "PRIMEIRO CONTATO",
+        firstContactDetail: "Encontre a drone que está seguindo Alice e Z.",
+        standYourGround: "NÃO RECUAR",
+        standYourGroundDetail: "Derrote Corrode no arquivo abandonado.",
+        movingSignal: "NÃO ESTÃO SOZINHOS",
+        movingSignalDetail: "Encontre o sinal de outra drone.",
+        belowStation: "SOB A ESTAÇÃO",
+        belowStationDetail: "Entre na passagem soterrada sob as ruínas.",
+        crystalEcho: "ECOS NO GELO",
+        crystalEchoDetail: "Chegue à câmara que repete o sinal.",
+        uneasyAlliance: "ALIANÇA INSTÁVEL",
+        uneasyAllianceDetail: "Aceite seguir Corrode para mais fundo.",
         chapterComplete: "CONTINUA...",
         chapterCompleteDetail: "Termine o capítulo disponível.",
         warningTitle: "AVISO DO SISTEMA",
@@ -192,6 +231,10 @@ const UI_TEXT = {
         musicRole: "MÚSICA",
         storyReferenceRole: "REFERÊNCIA DA HISTÓRIA",
         resetSettings: "REDEFINIR CONFIGURAÇÕES",
+        resetData: "APAGAR TODOS OS DADOS",
+        confirmResetData: "Apagar todos os dados do jogo? Isso remove permanentemente todos os saves, conquistas e configurações.",
+        noSave: "SEM SAVE",
+        noSaveDetail: "Começar uma partida sem salvar o progresso.",
         language: "IDIOMA",
         menu: "MENU",
         menuContinue: "CONTINUAR",
@@ -244,11 +287,28 @@ const UI_TEXT = {
         playTitle: "JUGAR",
         chapters: "CAPÍTULOS",
         achievements: "LOGROS",
+        achievementUnlocked: "LOGRO DESBLOQUEADO",
         playChapter: "JUGAR CAPÍTULO",
         firstSteps: "PRIMEROS PASOS",
         firstStepsDetail: "Empieza la historia.",
         intoTheFiles: "RUMBO A LOS ARCHIVOS",
         intoTheFilesDetail: "Llega a los archivos abandonados.",
+        ruinsRoute: "EN BUSCA DE REFUGIO",
+        ruinsRouteDetail: "Elige la ruta de la estación abandonada.",
+        stormRoute: "A LA INTEMPERIE",
+        stormRouteDetail: "Toma la ruta expuesta a la tormenta.",
+        firstContact: "PRIMER CONTACTO",
+        firstContactDetail: "Encuentra a la drone que sigue a Alice y Z.",
+        standYourGround: "SIN RETROCEDER",
+        standYourGroundDetail: "Derrota a Corrode en el archivo abandonado.",
+        movingSignal: "NO ESTÁN SOLOS",
+        movingSignalDetail: "Encuentra la señal de otra drone.",
+        belowStation: "BAJO LA ESTACIÓN",
+        belowStationDetail: "Entra al pasaje sepultado bajo las ruinas.",
+        crystalEcho: "ECOS EN EL HIELO",
+        crystalEchoDetail: "Llega a la cámara que repite la señal.",
+        uneasyAlliance: "ALIANZA INESTABLE",
+        uneasyAllianceDetail: "Acepta seguir a Corrode hacia el fondo.",
         chapterComplete: "CONTINUARÁ",
         chapterCompleteDetail: "Termina el capítulo disponible.",
         warningTitle: "AVISO DEL SISTEMA",
@@ -277,6 +337,10 @@ const UI_TEXT = {
         musicRole: "MÚSICA",
         storyReferenceRole: "REFERENCIA DE LA HISTORIA",
         resetSettings: "RESTABLECER CONFIGURACIÓN",
+        resetData: "RESTABLECER DATOS",
+        confirmResetData: "¿Borrar todos los datos del juego? Se eliminarán permanentemente todos los guardados, logros y ajustes.",
+        noSave: "SIN GUARDADO",
+        noSaveDetail: "Empezar una partida sin guardar el progreso.",
         language: "IDIOMA",
         menu: "MENÚ",
         menuContinue: "CONTINUAR",
@@ -347,8 +411,13 @@ let currentMusicName = null;
 let storyStarted = false;
 let chapterFinished = false;
 let cinematicPlaying = false;
+let cameraClockTimer = null;
+let achievementToastTimer = null;
+let activeBattle = null;
+let battleExitTimer = null;
 let titleIntroDismissed = false;
 let activeSaveSlot = null;
+let noSaveRun = false;
 let choiceHistory = {};
 let availableChapters = [];
 let selectedChapterIndex = 0;
@@ -462,6 +531,66 @@ function normalizeSettings() {
    DOM
 ========================================================= */
 
+function formatDeviceClock(date) {
+    const pad = value => String(value).padStart(2, "0");
+    const hours = pad(date.getHours());
+    const minutes = pad(date.getMinutes());
+    const seconds = pad(date.getSeconds());
+    const millis = String(date.getMilliseconds()).padStart(3, "0");
+    return `${hours}:${minutes}:${seconds}.${millis}`;
+}
+
+function setupCameraOverlay() {
+    if (!dom.storyScreen) return;
+    let overlay = document.getElementById("camera-overlay");
+    if (!overlay) {
+        overlay = document.createElement("div");
+        overlay.id = "camera-overlay";
+        overlay.className = "camera-overlay";
+        overlay.setAttribute("aria-hidden", "true");
+        const timestamp = document.createElement("span");
+        timestamp.id = "camera-timecode";
+        timestamp.className = "camera-timecode";
+        const record = document.createElement("span");
+        record.className = "camera-record-indicator";
+        const recordDot = document.createElement("span");
+        recordDot.className = "camera-record-dot";
+        recordDot.setAttribute("aria-hidden", "true");
+        const recordLabel = document.createElement("span");
+        recordLabel.textContent = "REC";
+        record.append(recordDot, recordLabel);
+        const tapeMode = document.createElement("span");
+        tapeMode.className = "camera-tape-mode";
+        tapeMode.textContent = "SP";
+        overlay.append(record, tapeMode, timestamp);
+        dom.storyScreen.appendChild(overlay);
+        dom.cameraTimecode = timestamp;
+    } else {
+        dom.cameraTimecode = overlay.querySelector("#camera-timecode");
+    }
+    if (!document.getElementById("cinema-bars")) {
+        const bars = document.createElement("div");
+        bars.id = "cinema-bars";
+        bars.className = "cinema-bars";
+        bars.setAttribute("aria-hidden", "true");
+        for (const edge of ["top", "bottom"]) {
+            const bar = document.createElement("div");
+            bar.className = `cinema-bar ${edge}`;
+            bars.appendChild(bar);
+        }
+        dom.storyScreen.appendChild(bars);
+        dom.cinemaBars = bars;
+    } else {
+        dom.cinemaBars = document.getElementById("cinema-bars");
+    }
+    const update = () => {
+        if (dom.cameraTimecode) dom.cameraTimecode.textContent = formatDeviceClock(new Date());
+    };
+    update();
+    if (cameraClockTimer) window.clearInterval(cameraClockTimer);
+    cameraClockTimer = window.setInterval(update, 32);
+}
+
 function cacheDOM() {
     const ids = [
         "loading-screen", "loading-progress", "loading-percent",
@@ -477,7 +606,7 @@ function cacheDOM() {
         "chapter-next", "play-chapter-button", "play-back-button", "achievement-list",
 
         "settings-screen", "credits-screen", "credits-title", "credits-back-button",
-        "settings-reset-button",
+        "settings-reset-button", "settings-reset-data-button",
         "settings-title", "settings-language-label",
         "settings-back-button",
 
@@ -630,6 +759,45 @@ function unlockAchievement(id) {
     unlocked[id] = Date.now();
     safeSetLocalStorage(ACHIEVEMENTS_KEY, JSON.stringify(unlocked));
     renderAchievements();
+    const definition = {
+        firstSteps: [getUI().firstSteps, getUI().firstStepsDetail],
+        intoTheFiles: [getUI().intoTheFiles, getUI().intoTheFilesDetail],
+        ruinsRoute: [getUI().ruinsRoute, getUI().ruinsRouteDetail],
+        stormRoute: [getUI().stormRoute, getUI().stormRouteDetail],
+        firstContact: [getUI().firstContact, getUI().firstContactDetail],
+        standYourGround: [getUI().standYourGround, getUI().standYourGroundDetail],
+        movingSignal: [getUI().movingSignal, getUI().movingSignalDetail],
+        belowStation: [getUI().belowStation, getUI().belowStationDetail],
+        crystalEcho: [getUI().crystalEcho, getUI().crystalEchoDetail],
+        uneasyAlliance: [getUI().uneasyAlliance, getUI().uneasyAllianceDetail],
+        chapterComplete: [getUI().chapterComplete, getUI().chapterCompleteDetail]
+    }[id];
+    if (definition) showAchievementToast(...definition);
+}
+
+function showAchievementToast(titleText, detailText) {
+    let toast = document.getElementById("achievement-toast");
+    if (!toast) {
+        toast = document.createElement("aside");
+        toast.id = "achievement-toast";
+        toast.className = "achievement-toast";
+        toast.setAttribute("role", "status");
+        toast.setAttribute("aria-live", "polite");
+        document.body.appendChild(toast);
+    }
+    toast.replaceChildren();
+    const label = document.createElement("span");
+    label.className = "achievement-toast-label";
+    label.textContent = getUI().achievementUnlocked;
+    const title = document.createElement("strong");
+    title.textContent = titleText;
+    const detail = document.createElement("span");
+    detail.textContent = detailText;
+    toast.append(label, title, detail);
+    toast.classList.remove("show");
+    requestAnimationFrame(() => toast.classList.add("show"));
+    if (achievementToastTimer) window.clearTimeout(achievementToastTimer);
+    achievementToastTimer = window.setTimeout(() => toast.classList.remove("show"), 4800);
 }
 
 function renderAchievements() {
@@ -639,6 +807,14 @@ function renderAchievements() {
     const definitions = [
         ["firstSteps", ui.firstSteps, ui.firstStepsDetail],
         ["intoTheFiles", ui.intoTheFiles, ui.intoTheFilesDetail],
+        ["ruinsRoute", ui.ruinsRoute, ui.ruinsRouteDetail],
+        ["stormRoute", ui.stormRoute, ui.stormRouteDetail],
+        ["firstContact", ui.firstContact, ui.firstContactDetail],
+        ["standYourGround", ui.standYourGround, ui.standYourGroundDetail],
+        ["movingSignal", ui.movingSignal, ui.movingSignalDetail],
+        ["belowStation", ui.belowStation, ui.belowStationDetail],
+        ["crystalEcho", ui.crystalEcho, ui.crystalEchoDetail],
+        ["uneasyAlliance", ui.uneasyAlliance, ui.uneasyAllianceDetail],
         ["chapterComplete", ui.chapterComplete, ui.chapterCompleteDetail]
     ];
     dom.achievementList.textContent = "";
@@ -652,7 +828,14 @@ function renderAchievements() {
         title.textContent = unlocked[id] ? titleText : "???";
         const detail = document.createElement("p");
         detail.textContent = unlocked[id] ? detailText : "????????????????";
-        item.append(icon, title, detail);
+        if (unlocked[id]) {
+            const status = document.createElement("span");
+            status.className = "achievement-status";
+            status.textContent = ui.achievementUnlocked;
+            item.append(icon, title, status, detail);
+        } else {
+            item.append(icon, title, detail);
+        }
         dom.achievementList.appendChild(item);
     }
 }
@@ -725,6 +908,11 @@ function updateUI() {
     setText(dom.vnContinue, ui.menuContinue);
     setText(dom.vnBackLine, ui.menuBack);
     setText(dom.vnSave, ui.menuSave);
+    if (dom.vnSave) {
+        dom.vnSave.disabled = noSaveRun;
+        if (noSaveRun) dom.vnSave.title = ui.noSaveDetail;
+        else dom.vnSave.removeAttribute("title");
+    }
     setText(dom.vnLoad, ui.menuLoad);
     setText(dom.vnBackMenu, ui.menuBackMenu);
     setText(dom.vnClose, ui.menuClose);
@@ -784,6 +972,10 @@ function updateUI() {
         dom.settingsResetButton.textContent = ui.resetSettings;
     }
 
+    if (dom.settingsResetDataButton) {
+        dom.settingsResetDataButton.textContent = ui.resetData;
+    }
+
     if (dom.deleteAllSavesButton) {
         dom.deleteAllSavesButton.textContent = ui.deleteAll;
     }
@@ -836,6 +1028,7 @@ function updateSettingsUI() {
 
     document.documentElement.dataset.quality = settings.quality;
     document.documentElement.dataset.effects = settings.effects ? "on" : "off";
+    syncCorrodeEyeGlow(dom.corrode?.classList.contains("corrode-visible"));
     document.documentElement.dataset.flashingLights = settings.flashingLights ? "on" : "off";
     document.documentElement.dataset.mouseLight = settings.mouseLight ? "on" : "off";
 
@@ -1339,6 +1532,7 @@ function parseStory(text) {
     let currentCharacter = null;
     let currentSprite = "001";
     let nextDialogueIsAction = false;
+    let pendingAchievements = [];
 
     let characterStates = { Alice: "001", Z: "001", Corrode: "001" };
     let visibleCharacters = { Alice: true, Z: false, Corrode: false };
@@ -1436,6 +1630,7 @@ function parseStory(text) {
             weather,
             music,
             chapter,
+            achievements: pendingAchievements.splice(0),
             characterStates: clone(characterStates),
             visibleCharacters: clone(visibleCharacters)
         };
@@ -1566,6 +1761,38 @@ function parseStory(text) {
         if (line.startsWith("@music")) {
             flushDialogue();
             music = line.replace(/^@music/i, "").trim() || null;
+            continue;
+        }
+
+        const achievementMatch = line.match(/^@achievement\s+(.+)$/i);
+        if (achievementMatch) {
+            flushDialogue();
+            const achievementId = achievementMatch[1].trim();
+            if (achievementId) pendingAchievements.push(achievementId);
+            continue;
+        }
+
+        const battleMatch = line.match(/^@battle(?:\s+(.+))?$/i);
+        if (battleMatch) {
+            flushDialogue();
+            finishChoice();
+            const chapterEntry = registerChapter(chapter);
+            if (chapterEntry.startLine === null) {
+                chapterEntry.startLine = lines.length;
+                chapterEntry.background = background || chapterEntry.background;
+                chapterEntry.ready = true;
+            }
+            lines.push({
+                type: "battle",
+                id: `battle_${lines.length}`,
+                battleId: battleMatch[1]?.trim() || "boss",
+                background,
+                weather,
+                music,
+                chapter,
+                characterStates: clone(characterStates),
+                visibleCharacters: clone(visibleCharacters)
+            });
             continue;
         }
 
@@ -1843,8 +2070,21 @@ function resetCharacters() {
     }
 }
 
+function syncCorrodeEyeGlow(visible) {
+    if (!dom.characters) return;
+    let glow = document.getElementById("corrode-eye-glow");
+    if (!glow) {
+        glow = document.createElement("div");
+        glow.id = "corrode-eye-glow";
+        glow.setAttribute("aria-hidden", "true");
+        dom.characters.appendChild(glow);
+    }
+    glow.classList.toggle("active", Boolean(visible && settings.effects));
+}
+
 function rebuildCharacterStage(line) {
     if (!line) return;
+    dom.alice?.classList.remove("battle-alice-exit-right");
 
     const states =
         line.characterStates || {};
@@ -1889,6 +2129,7 @@ function rebuildCharacterStage(line) {
     setCharacterSprite("Corrode", states.Corrode || "001");
     setCharacterVisible(dom.corrode, corrodeVisible);
     dom.corrode?.classList.toggle("corrode-visible", corrodeVisible);
+    syncCorrodeEyeGlow(corrodeVisible);
 
     dom.alice?.classList.remove("talking");
     dom.z?.classList.remove("talking");
@@ -1929,6 +2170,11 @@ function finishTypewriter() {
 
     const line =
         storyLines[currentLine];
+
+    dom.storyScreen?.classList.add("cinema-active");
+    dom.storyScreen?.classList.toggle("cinema-tense", Boolean(
+        line.type === "battle" || line.cutscene || line.character === "Corrode" || line.visibleCharacters?.Corrode
+    ));
     if (line.background === "files") unlockAchievement("intoTheFiles");
 
     if (dom.dialogueText && line) {
@@ -2110,6 +2356,121 @@ async function renderChoiceLine(line) {
     showChoices(line);
 }
 
+const BATTLE_TEXT = {
+    "pt-BR": { title:"BATALHA", turn:"TURNO", strike:"ATACAR", dodge:"DESVIAR", retry:"TENTAR NOVAMENTE", zTurn:"Vez do Z", enemyTurn:"Vez da Corrode", strikeMsg:"Z ataca Corrode e causa {n} de dano.", dodgeMsg:"Z desvia e contra-ataca, causando {n} de dano.", enemyDodged:"Corrode desviou!", counterMsg:"Os cristais da Corrode acertam Z e causam {n} de dano.", defeated:"Z foi derrotado." },
+    "es-419": { title:"BATALLA", turn:"TURNO", strike:"ATACAR", dodge:"ESQUIVAR", retry:"INTENTAR DE NUEVO", zTurn:"Turno de Z", enemyTurn:"Turno de Corrode", strikeMsg:"Z golpea a Corrode y causa {n} de daño.", dodgeMsg:"Z esquiva y contraataca, causando {n} de daño.", enemyDodged:"¡Corrode esquivó!", counterMsg:"Los cristales de Corrode alcanzan a Z y causan {n} de daño.", defeated:"Z ha sido derrotado." },
+    en: { title:"BOSS FIGHT", turn:"TURN", strike:"STRIKE", dodge:"DODGE", retry:"RETRY", zTurn:"Z's turn", enemyTurn:"Corrode's turn", strikeMsg:"Z strikes Corrode for {n} damage.", dodgeMsg:"Z dodges and counters for {n} damage.", enemyDodged:"Corrode dodged!", counterMsg:"Corrode's shards hit Z for {n} damage.", defeated:"Z was defeated." }
+};
+
+function battleText() { return BATTLE_TEXT[currentLanguage] || BATTLE_TEXT.en; }
+
+function battleHud() {
+    let hud = document.getElementById("battle-hud");
+    if (hud) return hud;
+    hud = document.createElement("section");
+    hud.id = "battle-hud";
+    hud.className = "battle-hud";
+    hud.setAttribute("aria-live", "polite");
+    dom.storyScreen?.appendChild(hud);
+    return hud;
+}
+
+function hideBattle() {
+    if (battleExitTimer) window.clearTimeout(battleExitTimer);
+    battleExitTimer = null;
+    activeBattle = null;
+    document.getElementById("battle-hud")?.classList.remove("active");
+    dom.dialogueBox?.classList.remove("battle-dialogue-hidden");
+    if (dom.nextButton) dom.nextButton.classList.remove("battle-dialogue-hidden");
+    dom.alice?.classList.remove("battle-alice-exit-right");
+}
+
+function renderBattleHud() {
+    if (!activeBattle) return;
+    const t = battleText(), hud = battleHud();
+    hud.replaceChildren();
+    hud.classList.add("active");
+    const title = document.createElement("div");
+    title.className = "battle-title";
+    title.textContent = `${t.title} · ${t.turn} ${activeBattle.turn}`;
+    hud.appendChild(title);
+    for (const [key, label] of [["enemyHP", "CORRODE"], ["playerHP", "Z"]]) {
+        const row = document.createElement("div"); row.className = "battle-health-row";
+        const name = document.createElement("span"); name.className = "battle-name"; name.textContent = label;
+        const track = document.createElement("div"); track.className = "battle-health-track";
+        const fill = document.createElement("div"); fill.className = `battle-health-fill ${key === "enemyHP" ? "enemy" : "player"}`;
+        fill.style.width = `${activeBattle[key]}%`;
+        fill.setAttribute("role", "progressbar"); fill.setAttribute("aria-valuemin", "0"); fill.setAttribute("aria-valuemax", "100"); fill.setAttribute("aria-valuenow", String(activeBattle[key]));
+        track.appendChild(fill);
+        const value = document.createElement("span"); value.className = "battle-hp-value"; value.textContent = `${activeBattle[key]} HP`;
+        row.append(name, track, value); hud.appendChild(row);
+    }
+    const status = document.createElement("div"); status.className = "battle-status"; status.textContent = activeBattle.message || t.zTurn; hud.appendChild(status);
+    const controls = document.createElement("div"); controls.className = "battle-controls";
+    const addButton = (label, action) => { const button = document.createElement("button"); button.type = "button"; button.textContent = label; button.disabled = activeBattle.busy; button.addEventListener("click", () => takeBattleAction(action)); controls.appendChild(button); };
+    if (activeBattle.playerHP <= 0) addButton(t.retry, "retry");
+    else if (activeBattle.enemyHP > 0) { addButton(t.strike, "strike"); addButton(t.dodge, "dodge"); }
+    hud.appendChild(controls);
+}
+
+async function renderBattleLine(line) {
+    stopTypewriter(); hideChoices(); hideBattle();
+    if (dom.speaker) dom.speaker.textContent = "";
+    if (dom.dialogueText) dom.dialogueText.textContent = "";
+    dom.dialogueBox?.classList.add("battle-dialogue-hidden");
+    dom.nextButton?.classList.add("battle-dialogue-hidden");
+    activeBattle = { lineIndex: currentLine, playerHP: 100, enemyHP: 100, turn: 1, busy: true, message: battleText().zTurn };
+    dom.alice?.classList.remove("alice-right");
+    dom.alice?.classList.add("battle-alice-exit-right");
+    renderBattleHud();
+    battleExitTimer = window.setTimeout(() => {
+        if (!activeBattle || activeBattle.lineIndex !== currentLine) return;
+        setCharacterVisible(dom.alice, false);
+        dom.alice?.classList.remove("battle-alice-exit-right");
+        activeBattle.busy = false;
+        renderBattleHud();
+    }, 1100);
+}
+
+function takeBattleAction(action) {
+    if (!activeBattle) return;
+    const t = battleText();
+    if (action === "retry") {
+        activeBattle.playerHP = 100; activeBattle.enemyHP = 100; activeBattle.turn = 1; activeBattle.busy = false; activeBattle.message = t.zTurn; renderBattleHud(); return;
+    }
+    if (activeBattle.busy || activeBattle.playerHP <= 0 || activeBattle.enemyHP <= 0) return;
+    activeBattle.busy = true;
+    const corrodeDodged = action === "strike" && Math.random() < 0.35;
+    const damage = action === "strike" ? 34 : 18;
+    if (!corrodeDodged) activeBattle.enemyHP = Math.max(0, activeBattle.enemyHP - damage);
+    activeBattle.message = corrodeDodged
+        ? t.enemyDodged
+        : (action === "strike" ? t.strikeMsg : t.dodgeMsg).replace("{n}", String(damage));
+    if (activeBattle.enemyHP <= 0) {
+        renderBattleHud();
+        const battleLineIndex = activeBattle.lineIndex;
+        window.setTimeout(async () => {
+            if (!activeBattle || activeBattle.lineIndex !== battleLineIndex) return;
+            hideBattle();
+            if (!storyStarted || !dom.storyScreen?.classList.contains("active")) return;
+            currentLine = battleLineIndex + 1;
+            await renderCurrentLine({ updateMusic: false });
+            autoCheckpoint();
+        }, 700);
+        return;
+    }
+    window.setTimeout(() => {
+        if (!activeBattle) return;
+        const counter = action === "strike" ? (corrodeDodged ? 14 : 12) : 5;
+        activeBattle.playerHP = Math.max(0, activeBattle.playerHP - counter);
+        activeBattle.message = activeBattle.playerHP <= 0 ? t.defeated : t.counterMsg.replace("{n}", String(counter));
+        activeBattle.turn++;
+        activeBattle.busy = false;
+        renderBattleHud();
+    }, 850);
+    renderBattleHud();
+}
+
 /* =========================================================
    DIALOGUE
 ========================================================= */
@@ -2129,6 +2490,11 @@ async function renderCurrentLine(
     const line =
         storyLines[currentLine];
 
+    if (line.background === "files") unlockAchievement("intoTheFiles");
+    line.achievements?.forEach(unlockAchievement);
+
+    if (line.type !== "battle") hideBattle();
+
     chapterFinished = false;
 
     const lineChapter = line.chapter || currentChapter || "Prologue";
@@ -2139,6 +2505,15 @@ async function renderCurrentLine(
         activeSaveSlot = firstEmpty || null;
     }
     currentChapter = lineChapter;
+
+    if (line.type === "battle") {
+        updateBackground(line.background);
+        updateWeather(line.weather);
+        rebuildCharacterStage(line);
+        if (updateMusic && line.music) await playStoryMusic(line.music);
+        await renderBattleLine(line);
+        return;
+    }
 
     if (line.type === "choice") {
         updateBackground(line.background);
@@ -2219,6 +2594,7 @@ async function startStory(lineIndex = 0) {
 
 async function nextLine() {
     if (!storyStarted || vnMenuOpen || cinematicPlaying) return;
+    if (activeBattle) return;
 
     if (isTyping) {
         finishTypewriter();
@@ -2431,6 +2807,7 @@ function createSaveData() {
 }
 
 function saveGame(slot) {
+    if (noSaveRun) return false;
     if (
         !Number.isInteger(slot) ||
         slot < 1 ||
@@ -2481,6 +2858,8 @@ async function loadGame(slot) {
     if (!data) return false;
 
     activeSaveSlot = slot;
+    noSaveRun = false;
+    updateUI();
     choiceHistory =
         data.choices && typeof data.choices === "object"
             ? JSON.parse(JSON.stringify(data.choices))
@@ -2575,6 +2954,56 @@ function deleteAllSaves() {
     renderSaveSlots();
 }
 
+function removeAllGameStorage() {
+    for (const storageName of ["localStorage", "sessionStorage"]) {
+        try {
+            const storage = window[storageName];
+            const keys = Array.from({ length: storage.length }, (_, index) => storage.key(index))
+                .filter(key => key && key.startsWith("killer-drones"));
+            keys.forEach(key => storage.removeItem(key));
+        } catch (_) {}
+    }
+}
+
+async function resetAllGameData() {
+    if (!window.confirm(getUI().confirmResetData)) return;
+    removeAllGameStorage();
+    settings = { ...DEFAULT_SETTINGS };
+    currentLanguage = "en";
+    currentLine = 0;
+    currentChapter = "Prologue";
+    currentBackground = null;
+    currentWeather = null;
+    currentMusicName = null;
+    activeSaveSlot = null;
+    noSaveRun = false;
+    choiceHistory = {};
+    storyStarted = false;
+    chapterFinished = false;
+    finalCreditsOpen = false;
+    cinematicPlaying = false;
+    stopTypewriter();
+    hideChoices();
+    hideBattle();
+    if (dom.cutsceneVideo) {
+        dom.cutsceneVideo.pause();
+        dom.cutsceneVideo.currentTime = 0;
+    }
+    if (achievementToastTimer) window.clearTimeout(achievementToastTimer);
+    achievementToastTimer = null;
+    document.getElementById("achievement-toast")?.remove();
+    updateUI();
+    updateLanguageButtons();
+    updateSettingsUI();
+    renderAchievements();
+    renderSaveSlots();
+    resetCharacters();
+    await stopStoryMusic();
+    await stopMenuMusic();
+    showScreen(dom.titleScreen);
+    await startMenuMusic();
+}
+
 function formatSaveDate(timestamp) {
     if (!timestamp) return "";
 
@@ -2595,13 +3024,10 @@ function renderSaveSlots() {
 
     const ui = getUI();
 
-    for (
-        let slot = 1;
-        slot <= SAVE_SLOTS;
-        slot++
-    ) {
-        const data =
-            getSaveData(slot);
+    const slotCount = SAVE_SLOTS + (saveMode === "start" ? 1 : 0);
+    for (let slot = 1; slot <= slotCount; slot++) {
+        const isNoSave = saveMode === "start" && slot === SAVE_SLOTS + 1;
+        const data = isNoSave ? null : getSaveData(slot);
 
         const wrapper =
             document.createElement("div");
@@ -2609,6 +3035,7 @@ function renderSaveSlots() {
         wrapper.className =
             "save-slot-wrapper";
         wrapper.dataset.slot = String(slot);
+        wrapper.classList.toggle("no-save-slot", isNoSave);
         wrapper.classList.toggle("active", slot === saveCarouselIndex);
 
         const button =
@@ -2627,15 +3054,18 @@ function renderSaveSlots() {
         title.className =
             "save-slot-number";
 
-        title.textContent =
-            `SLOT ${slot}`;
+        title.textContent = isNoSave ? ui.noSave : `SLOT ${slot}`;
 
         const preview = document.createElement("div");
         preview.className = "save-preview";
+        if (isNoSave) {
+            preview.classList.add("no-save-preview");
+            preview.textContent = "∞";
+        }
         const sceneLine = data && storyLines[Number(data.line)];
         const sceneName = data?.background || sceneLine?.background || "abandonedHall";
         const sceneImage = BACKGROUNDS[sceneName] || BACKGROUNDS.abandonedHall;
-        preview.style.backgroundImage = `linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.35)), url("${sceneImage}")`;
+        if (!isNoSave) preview.style.backgroundImage = `linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.35)), url("${sceneImage}")`;
         if (data && sceneLine) {
             const visibleCharacters = sceneLine.visibleCharacters || {};
             const states = sceneLine.characterStates || {};
@@ -2655,7 +3085,9 @@ function renderSaveSlots() {
         information.className =
             "save-slot-info";
 
-        if (!data) {
+        if (isNoSave) {
+            information.textContent = ui.noSaveDetail;
+        } else if (!data) {
             information.textContent =
                 ui.empty;
         } else {
@@ -2711,10 +3143,8 @@ function renderSaveSlots() {
             }
         );
 
-        wrapper.append(
-            button,
-            deleteButton
-        );
+        wrapper.append(button);
+        if (!isNoSave) wrapper.append(deleteButton);
 
         dom.saveSlots.appendChild(
             wrapper
@@ -2723,7 +3153,8 @@ function renderSaveSlots() {
 }
 
 function changeSaveCarousel(direction) {
-    saveCarouselIndex = ((saveCarouselIndex - 1 + direction + SAVE_SLOTS) % SAVE_SLOTS) + 1;
+    const slotCount = SAVE_SLOTS + (saveMode === "start" ? 1 : 0);
+    saveCarouselIndex = ((saveCarouselIndex - 1 + direction + slotCount) % slotCount) + 1;
     document.querySelectorAll(".save-slot-wrapper").forEach(wrapper => {
         wrapper.classList.toggle("active", Number(wrapper.dataset.slot) === saveCarouselIndex);
     });
@@ -2830,6 +3261,14 @@ async function handleSaveSlot(slot) {
     playButtonSound();
     if (saveMode === "start" || saveMode === "load") requestGameFullscreen();
 
+    if (saveMode === "start" && slot === SAVE_SLOTS + 1) {
+        activeSaveSlot = null;
+        noSaveRun = true;
+        updateUI();
+        await startStory(availableChapters[selectedChapterIndex]?.startLine || 0);
+        return;
+    }
+
     const existing =
         getSaveData(slot);
 
@@ -2844,6 +3283,8 @@ async function handleSaveSlot(slot) {
         }
 
         activeSaveSlot = slot;
+        noSaveRun = false;
+        updateUI();
 
         await startStory(availableChapters[selectedChapterIndex]?.startLine || 0);
 
@@ -3660,6 +4101,11 @@ function setupEvents() {
         });
     }
 
+    dom.settingsResetDataButton?.addEventListener("click", () => {
+        playButtonSound();
+        void resetAllGameData();
+    });
+
     if (dom.settingsBackButton) {
         dom.settingsBackButton.addEventListener(
             "click",
@@ -4028,6 +4474,7 @@ async function initializeGame() {
     initialized = true;
 
     cacheDOM();
+    setupCameraOverlay();
     normalizeSettings();
     setupVignetteFallback();
     setupSettingsControls();
